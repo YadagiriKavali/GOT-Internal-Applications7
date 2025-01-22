@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSDGAPI", "MSDGAPI\MSDGAPI.csproj", "{1D2BEED1-2BD9-45CD-BC66-BCB3E7B280F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSAPI", "SMSAPI\SMSAPI.csproj", "{3DF7A32E-4795-4FA8-890D-2D9E52F20558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eSeva", "eSeva\eSeva.csproj", "{138A8D18-E072-4B4A-A914-DA4FC7386C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meseva", "meseva\meseva.csproj", "{FB2622FE-F3D3-4091-AB28-12513F460274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User", "UserLib\User.csproj", "{45D135BF-A38C-4F8E-8226-4EC06A1724E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "martconnect", "martconnect\martconnect.csproj", "{5EBC99F5-84DE-48F9-A54D-9E2F415F372A}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MSDGAPI\\MSDGAPI.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = MSDGAPI\\
+		SccProjectUniqueName2 = SMSAPI\\SMSAPI.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = SMSAPI\\
+		SccProjectUniqueName3 = eSeva\\eSeva.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = eSeva\\
+		SccProjectUniqueName4 = meseva\\meseva.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = meseva\\
+		SccProjectUniqueName5 = UserLib\\User.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = UserLib\\
+		SccProjectUniqueName6 = martconnect\\martconnect.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = martconnect\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D2BEED1-2BD9-45CD-BC66-BCB3E7B280F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2BEED1-2BD9-45CD-BC66-BCB3E7B280F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2BEED1-2BD9-45CD-BC66-BCB3E7B280F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2BEED1-2BD9-45CD-BC66-BCB3E7B280F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF7A32E-4795-4FA8-890D-2D9E52F20558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF7A32E-4795-4FA8-890D-2D9E52F20558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF7A32E-4795-4FA8-890D-2D9E52F20558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF7A32E-4795-4FA8-890D-2D9E52F20558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138A8D18-E072-4B4A-A914-DA4FC7386C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138A8D18-E072-4B4A-A914-DA4FC7386C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138A8D18-E072-4B4A-A914-DA4FC7386C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138A8D18-E072-4B4A-A914-DA4FC7386C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2622FE-F3D3-4091-AB28-12513F460274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2622FE-F3D3-4091-AB28-12513F460274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2622FE-F3D3-4091-AB28-12513F460274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2622FE-F3D3-4091-AB28-12513F460274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D135BF-A38C-4F8E-8226-4EC06A1724E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D135BF-A38C-4F8E-8226-4EC06A1724E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D135BF-A38C-4F8E-8226-4EC06A1724E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D135BF-A38C-4F8E-8226-4EC06A1724E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBC99F5-84DE-48F9-A54D-9E2F415F372A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBC99F5-84DE-48F9-A54D-9E2F415F372A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBC99F5-84DE-48F9-A54D-9E2F415F372A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBC99F5-84DE-48F9-A54D-9E2F415F372A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

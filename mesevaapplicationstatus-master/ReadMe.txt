@@ -1,0 +1,1 @@
+To fetch the Latest status of Meseva application and capturing in Payment trans table and push the sms to user with status

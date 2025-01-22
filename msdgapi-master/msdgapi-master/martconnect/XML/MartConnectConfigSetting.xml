@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MARTCONNECT>
+  <AUTHENTICATION>
+    <USERNAME>API190794</USERNAME>
+    <PASSWORD>e6eff2e472</PASSWORD>
+    <APIKEY>84046253740274946593946496</APIKEY>
+    <URL>http://martconnectplus.com/app/index.php?AccessKey=84046253740274946593946496&amp;username=API190794</URL>
+  </AUTHENTICATION>
+  <SERVICES>
+    <SOURCECITIES>&amp;action=mod_BusTravels_getSourceCities</SOURCECITIES>
+    <DESTINATIONCITIES>&amp;action=mod_BusTravels_getDestinationCities&amp;SourceCity={CITYID}</DESTINATIONCITIES>
+    <BUSESSEARCH>&amp;action=mod_BusTravels_SearchAvailableBuses&amp;SourceCity={SOURCECITYID}&amp;DestinationCity={DESTCITYID}&amp;DepartDate={DEPARTDATE}</BUSESSEARCH>
+    <SEATAVAILABILTY>&amp;action=mod_BusTravels_getSeatAvailability&amp;UserTrackId={USERTRACKID}&amp;SourceCity={SOURCECITY}&amp;DestinationCity={DESTINATIONCITY}&amp;DepartDate={DEPARTDATE}&amp;ReturnDate={RETURNDATE}&amp;ScheduleId={SCHEDULEID}&amp;StationId={STATIONID}&amp;TransportId={TRANSPORTID}&amp;TransportName={TRANSPORTNAME}&amp;SeatTypeId={SEATTYPEID}&amp;TravelDate={TRAVELDATE}&amp;CustomParamsRef={CUSTOMPARAMSREF}</SEATAVAILABILTY>
+    <TICKETBOOKING>&amp;action=mod_BusTravels_BookSeats&amp;UserTrackId={USERTRACKID}&amp;ScheduleId={SCHEDULEID}&amp;StationId={STATIONID}&amp;TransportId={TRANSPORTID}&amp;TransportName={TRANSPORTNAME}&amp;BusId={BUSID}&amp;BusName={BUSNAME}&amp;TravelDate={TRAVELDATE}&amp;ArrivalTime={ARRIVALTIME}&amp;DepartureTime={DEPARTURETIME}&amp;SourceCity={SOURCECITY}&amp;DestinationCity={DESTINATIONCITY}&amp;SourceCityName={SOURCECITYNAME}&amp;DestinationCityName={DESTINATIONCITYNAME}&amp;Address={ADDRESS}&amp;City={CITY}&amp;Pincode={PINCODE}&amp;Country={COUNTRY}&amp;Mobile={MOBILE}&amp;Email={EMAIL}&amp;IDProofType={IDPROOFTYPE}&amp;IDProofNumber={IDPROOFNUMBER}&amp;BoardingPoint={BOARDINGPOINT}&amp;BoardingPointName={BOARDINGPOINTNAME}&amp;DropPoint={DROPPOINT}&amp;DropPointName={DROPPOINTNAME}&amp;Fare={FARE}&amp;CoachTypeId={COACHTYPEID}&amp;SeatTypeId={SEATTYPEID}&amp;SeatTypeName={SEATTYPENAME}&amp;CustomParamsRef={CUSTOMPARAMSREF}&amp;RetryBooking={RETRYBOOKING}</TICKETBOOKING>
+    <CANCELBOOKEDTICKET>&amp;action=mod_BusTravels_TicketCancellation&amp;bid={TICKETBOOKINGID}&amp;TicketNumber={TICKETNUMBER}&amp;IFSC={BENIFSCCODE}</CANCELBOOKEDTICKET>
+  </SERVICES>
+  <ERRORS>
+    <CODE_300>Error occurred while processing your request</CODE_300>
+    <CODE_301>No record found</CODE_301>
+    <CODE_302>Unable to process your request</CODE_302>
+    <CODE_400>Inavlid Request</CODE_400>
+    <CODE_401>You cann't book tickets for more than 6 people.</CODE_401>
+  </ERRORS>
+</MARTCONNECT>

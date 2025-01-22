@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>TApp Folio Aadhaar Enrollment</title>
+    <link rel="shortcut icon" href="~/got.ico" type="image/x-icon" />
+
+    @Styles.Render("~/assets/css/CustomMaterializeCss")
+
+    @Styles.Render("~/assets/css/CustomCss")
+    <link href="~/assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    @Styles.Render("~/Scripts/an-js/CustomMatCss")
+
+    @Styles.Render("~/Plugins/toaster/CustomToasterCss")
+    
+    <style>
+        .field-validation-error span {
+            color: red !important;
+        }
+    </style>
+    <style type="text/css">
+        @@media screen and (max-width:1024px) {
+            body {
+                background: #3e50b4;
+            }
+        }
+    </style>
+
+    @Scripts.Render("~/Scripts/CustomJqueryJs")
+
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/assets/js/CustomMaterializeJs")
+
+    @Scripts.Render("~/Scripts/an-js/CustomAngularJs")
+
+    @Scripts.Render("~/Scripts/an-js/CustomMatJs")
+
+    @Scripts.Render("~/Plugins/toaster/CustomToasterJs")
+     
+</head>
+<body class="bg_white">
+    <div class="bg_white" ng-app="AadharModule">
+        @Html.Securitykey("Securitykey")
+        <!-- #region This is for Alert Notifications Coding Start-->
+        @if (ViewBag.Notifications != null)
+        {
+            Newtonsoft.Json.JsonSerializerSettings settings = new Newtonsoft.Json.JsonSerializerSettings
+            {
+                TypeNameHandling = Newtonsoft.Json.TypeNameHandling.All
+            };
+
+            List<AadharAdmin.Controllers.Alert> obj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AadharAdmin.Controllers.Alert>>(ViewBag.Notifications, settings);
+
+            foreach (AadharAdmin.Controllers.Alert notification in obj)
+            {
+                switch (notification.Type)
+                {
+                    case AadharAdmin.Controllers.AlertType.Success:
+                        <script type="text/javascript">bootoast.toast({ type: 'success', timeout: 10,  message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Error:
+                        <script type="text/javascript">bootoast.toast({ type: 'danger', timeout: 10,  message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Info:
+                        <script type="text/javascript">bootoast.toast({ timeout: 10, message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Warning:
+                        <script type="text/javascript">bootoast.toast({ type: 'warning', timeout: 10, message: '@notification.Message' });</script>
+                        break;
+                }
+            }
+        }
+        <!--#endregion This is for Alert Notifications Coding End-->
+        <script src="~/Scripts/Common/directives.js"></script>
+        <div class="logowrap center-align">
+            <img src="~/assets/img/T-APP_Logo_login_english.svg" class="responsive-img" alt="GOT_Logo">
+        </div>
+        @RenderBody()
+    </div>
+    <footer style="text-align:center">
+        <p>&copy; @DateTime.Now.Year - Powered by <a href="https://imimobile.com/" target="_blank">IMImobile.</a></p>
+    </footer>
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(10000, 0).slideUp(1000, function () {
+                $(this).remove();
+            });
+        }, 4000);
+    </script>
+</body>
+</html>

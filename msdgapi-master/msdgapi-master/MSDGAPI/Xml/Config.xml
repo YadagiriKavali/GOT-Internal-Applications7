@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XML>
+  <SERVICE>
+    <SUCCESS>
+      <INSERT>Service Details Saved Successfully. Please add TFN and Agent for this service.</INSERT>
+      <UPDATE>Service Details Updated Successfully</UPDATE>
+      <DELETE>Service Deleted Successfully</DELETE>
+    </SUCCESS>
+    <ERROR>
+      <SERVICEID_EXISTS>Service already exists</SERVICEID_EXISTS>
+    </ERROR>
+  </SERVICE>
+  <TFN>
+    <SUCCESS>
+      <INSERT>TFN Details Saved Successfully</INSERT>
+      <UPDATE>TFN Details Updated Successfully</UPDATE>
+      <DELETE>TFN Deleted Successfully</DELETE>
+    </SUCCESS>
+    <ERROR>
+      <TFNID_EXISTS>TFN already exists</TFNID_EXISTS>
+    </ERROR>
+  </TFN>
+	<AGENT>
+		<SUCCESS>
+			<INSERT>Agent Details Saved Successfully</INSERT>
+			<UPDATE>Agent Details Updated Successfully</UPDATE>
+			<DELETE>Agent Deleted Successfully</DELETE>
+		</SUCCESS>
+		<ERROR>
+			<AGENTID_EXISTS>Agentid is already exists</AGENTID_EXISTS>
+		</ERROR>
+	</AGENT>
+  <USERS>
+    <SUCCESS>
+      <INSERT>User Details Saved Successfully</INSERT>
+      <UPDATE>User Details Updated Successfully</UPDATE>
+      <DELETE>User Deleted Successfully</DELETE>
+      <PWDUPDT>User Password Updated Successfully</PWDUPDT>
+    </SUCCESS>
+    <ERROR>
+      <USERID_EXISTS>User already exists</USERID_EXISTS>
+      <USERID_NOTEXISTS>User does not exists</USERID_NOTEXISTS>
+      <NODATA>No data present</NODATA>
+    </ERROR>
+  </USERS>
+  <USERSRVTFNS>
+    <SUCCESS>
+      <INSERT>Details Saved Successfully</INSERT>
+      <UPDATE>Details Updated Successfully</UPDATE>
+      <DELETE>Deleted Successfully</DELETE>
+    </SUCCESS>
+    <ERROR>
+      <DETAILS_EXISTS>Details already exists</DETAILS_EXISTS>
+    </ERROR>
+  </USERSRVTFNS>
+  <USERID>Admin</USERID>
+  <PASSWORD>aW1pQDEyMw==</PASSWORD>
+</XML>

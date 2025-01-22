@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errorcode>0</errorcode>
+  <errortext>Sucess</errortext>
+  <Recharges>
+    <Recharge>
+      <loginid>190794</loginid>
+      <CreatedBy>T APP FOLIO</CreatedBy>
+      <TID>201062</TID>
+      <TDateTime>2020-01-07 11:52:24</TDateTime>
+      <MobileNumber>9912717100</MobileNumber>
+      <Amount>293.82</Amount>
+      <DebitAmount>293.82</DebitAmount>
+      <Operator>ID</Operator>
+      <StatusDescp>Success</StatusDescp>
+      <State />
+      <RechargeClient>PORTAL</RechargeClient>
+      <Status>0</Status>
+      <StatusText>Success</StatusText>
+      <OperatorCode>ID</OperatorCode>
+      <RemainingBalance>78,763.61</RemainingBalance>
+      <ActualTID />
+    </Recharge>
+  </Recharges>
+</response>

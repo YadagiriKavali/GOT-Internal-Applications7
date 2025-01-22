@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <hmwssb_viewbill Service="eseva" Action="7"/>
+  <user_update_lang Service="user" Action="4"/>
+  <user_check Service="user" Action="8"/>
+  <user_reg Service="user" Action="2"/>
+  <airtel_viewbill Service="eseva" Action="1"/>
+  <airtel_landline_viewbill Service="eseva" Action="3"/>
+  <idea_viewbill Service="eseva" Action="5"/>
+  <act_viewbill Service="eseva" Action="9"/>
+  <rta_viewbill Service="eseva" Action="11"/>
+  <ttl_viewbill Service="eseva" Action="13"/>
+  <tsspdcl_getdistricts Service="eseva" Action="15"/>
+  <tsspdcl_geteros Service="eseva" Action="16"/>
+  <tsspdcl_viewbill Service="eseva" Action="17"/>
+  <prepaid_getoperators Service="martconnect" Action="1"/>
+  <prepaid_recharge Service="martconnect" Action="2"/>
+  <prepaid_rechargestatus Service="martconnect" Action="3"/>
+  <prepaid_viewbalance Service="martconnect" Action="4"/>
+  <bsnl_viewbill Service="eseva" Action="33"/>
+  <rta_lltest_viewbill Service="eseva" Action="40"/>
+  <rta_lifetax_viewbill Service="eseva" Action="35"/>
+  <application_status Service="meseva" Action="8"/>
+  <hathway_viewbill Service="eseva" Action="83"/>
+</configuration>

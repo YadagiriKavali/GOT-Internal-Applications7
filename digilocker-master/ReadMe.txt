@@ -1,0 +1,1 @@
+This application used to upload the documents through digilocker option from App.

@@ -1,0 +1,46 @@
+﻿<nav>
+    <div class="nav-wrapper nav-wrapper1 navbar-fixed col-12">
+        @if (Session["USERTYPE"] != null && Session["USERTYPE"].ToString().ToUpper() == "A")
+        {
+            <a id="logo-container" href="@Url.Action("manage","Admin")" cl class="logo-img brand-logo responsive-logo">
+                <img src="~/assets/img/tapp-logo.png" alt="GotLogo" class="responsive-img">
+                <span class="logo-txt">@ViewBag.ModuleName</span>
+            </a>
+        }
+        else
+        {
+            <a id="logo-container" href="@Url.Action("Index","Operator")" class="logo-img brand-logo responsive-logo">
+                <img src="~/assets/img/tapp-logo.png" alt="GotLogo" class="responsive-img">
+                <span class="logo-txt">@ViewBag.ModuleName</span>
+            </a>
+        }
+        <img src="~/assets/img/tapp-logo_Index.png" class="responsive-img mgnt10 mgnr10 float_right" alt="GOT_Logo" width="40" />
+        <div class="pull-right">
+            <ul id="ul_nav" class="nav nav-pills adhar-nav">
+                @if (Session["USERTYPE"] != null && Session["USERTYPE"].ToString().ToUpper() == "A")
+                {
+                    <li id="li_manage">
+                        <a href="@Url.Action("manage","Admin")">                            
+                            Manage
+                        </a>
+                    </li>
+                    <li id="li_addCenter">
+                        <a href="@Url.Action("AddCenters","Admin")">                             
+                            Add Center
+                        </a>
+                    </li>
+                    <li id="li_trans">
+                        <a href="@Url.Action("Index","Admin")">                             
+                            Transactions
+                        </a>
+                    </li>
+                }
+                <li>
+                    <a href="@Url.Action("Logout","Home")">                         
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

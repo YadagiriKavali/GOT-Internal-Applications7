@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "channelinterface-master", "..\channelinterface-master", "{A5941D8A-BA65-4A21-918E-392C0A70DCC3}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Mobileapps/Operator/Davinci/TS/channelinterface.root/channelinterface", SWCUBAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/channelinterface"
+		Debug.AspNetCompiler.PhysicalPath = "..\channelinterface-master\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\channelinterface\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/channelinterface"
+		Release.AspNetCompiler.PhysicalPath = "..\channelinterface-master\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\channelinterface\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59688"
+		SlnRelativePath = "..\channelinterface-master\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5941D8A-BA65-4A21-918E-392C0A70DCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5941D8A-BA65-4A21-918E-392C0A70DCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC65B1EF-D91F-44B4-A617-4602E6EF2C46}
+	EndGlobalSection
+EndGlobal

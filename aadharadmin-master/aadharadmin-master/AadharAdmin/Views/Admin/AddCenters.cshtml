@@ -1,0 +1,130 @@
+﻿@model AadharAdmin.Models.AddCenter
+@{
+    ViewBag.Title = "AddCenters";
+    Layout = "~/Views/Shared/_ModuleLayout.cshtml";
+}
+
+@Styles.Render("~/Plugins/Bootstrap/CustomBootstrapCss")
+
+@Scripts.Render("~/Plugins/Bootstrap/CustomBootstrapJs")
+
+<style>
+    .select2-container--default .select2-selection--single {
+        background-color: #fff;
+        border: none;
+        border-radius: 4px;
+    }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+</style>
+
+<section ng-controller="AddCenterCtrl" ng-cloak="">
+    <div class="container">
+        <div class="loader" ng-show="isLoading">
+            <div class="preloader-wrapper big active custom_loader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <form method="post" action="@Url.Action("AddCenters","Admin")" class="col s12 forms-summary">
+                    <div class="card-panel recipt-aligmnt p-0">
+                        @Html.AntiForgeryToken()
+                        <div class="row">
+                            <h3 class="header-admin">Add New Center</h3>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="form-group col-6">
+                                <label class="control-label">District</label>
+                                <select name="distrctname" ng-model="district" class="form-control basic_select2">
+                                    <option value="">Select Districts</option>
+                                    <option ng-repeat="district in optDistrict | orderBy : 'name'" value="{{district.name}}">{{district.name}}</option>
+                                </select>
+                                @Html.HiddenFor(m => m.distrctname)
+                                @Html.ValidationMessageFor(m => m.distrctname)
+                            </div>               
+                        </div>
+                        <div class="row mt-4">                             
+                            <div class="form-group col-6">
+                                <label class="control-label">Center Name</label>
+                                @Html.TextBoxFor(m => m.centername, new { @class = "form-control", char_With_Space = "", maxlength = "50" })
+                                @Html.ValidationMessageFor(m => m.centername)
+                            </div>
+                            <div class="form-group col-6">
+                                <label class="control-label">Center Code</label>
+                                @Html.TextBoxFor(m => m.centercode, new { @class = "form-control", char_With_Space = "", maxlength = "20" })
+                                @Html.ValidationMessageFor(m => m.centercode)
+                            </div>
+                        </div>
+                        <div class="row mt-4">                          
+                            <div class="form-group col-6">
+                                <label class="control-label">Operator Name</label>
+                                @Html.TextBoxFor(m => m.operatorname, new { @class = "form-control", char_With_Space = "", maxlength = "50" })
+                                @Html.ValidationMessageFor(m => m.operatorname)
+                            </div>
+                            <div class="form-group col-6">
+                                <label class="control-label">Mobile Number</label>
+                                @Html.TextBoxFor(m => m.phoneno, new { @class = "form-control", numerics_Only="", maxlength = "10" })
+                                @Html.ValidationMessageFor(m => m.phoneno)
+                            </div>
+                        </div>
+                        <div class="row mt-4">                           
+                            <div class="form-group col-6">
+                                <label class="control-label">Email</label>
+                                @Html.TextBoxFor(m => m.email, new { @class = "form-control", maxlength = "100" })
+                                @Html.ValidationMessageFor(m => m.email)
+                            </div>
+                            <div class="form-group col-6">
+                                <label class="control-label">User Name</label>
+                                @Html.TextBoxFor(m => m.username, new { @class = "form-control", char_With_Space = "", maxlength = "30" })
+                                @Html.ValidationMessageFor(m => m.username)
+                            </div>
+                        </div>
+                        <div class="row mt-4">                                                       
+                            <div class="form-group col-6">
+                                <label class="control-label">Password</label>
+                                @Html.TextBoxFor(m => m.password, new { @class = "form-control", maxlength = "30" })
+                                @Html.ValidationMessageFor(m => m.password)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m12 center-align login-wrap">
+                                <button type="submit" ng-click="CheckFormValid($event)" class="waves-effect waves-light btn cust-btn0 mgnl15 mgnb10">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <input type="hidden" id="hdnGetDistricts" value="@Url.Action("GetDistricts","Admin")" />
+    </div>
+</section>
+<script src="~/Scripts/Admin/IMI.AddNewCenters.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#ul_nav li.active').removeClass('active');
+        $('#li_addCenter').addClass('active');
+        $('#li_addCenter a').removeAttr("href");
+    })
+</script> 

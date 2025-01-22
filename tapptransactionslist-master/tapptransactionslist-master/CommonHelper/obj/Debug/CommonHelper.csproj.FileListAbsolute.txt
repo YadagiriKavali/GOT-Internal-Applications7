@@ -1,0 +1,15 @@
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\bin\Debug\CommonHelper.dll
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\bin\Debug\CommonHelper.pdb
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\bin\Debug\IMI.SqlWrapper.dll
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\bin\Debug\Newtonsoft.Json.dll
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\obj\Debug\CommonHelper.dll
+D:\Applications\GitLab\GOT\TAppTransactionsList\CommonHelper\obj\Debug\CommonHelper.pdb
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\bin\Debug\CommonHelper.dll
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\bin\Debug\CommonHelper.pdb
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\bin\Debug\IMI.SqlWrapper.dll
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\obj\Debug\CommonHelper.csproj.AssemblyReference.cache
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\obj\Debug\CommonHelper.csproj.CoreCompileInputs.cache
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\obj\Debug\CommonHelper.csproj.CopyComplete
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\obj\Debug\CommonHelper.dll
+C:\Users\psirasan\Downloads\tapptransactionslist-master\tapptransactionslist-master\CommonHelper\obj\Debug\CommonHelper.pdb

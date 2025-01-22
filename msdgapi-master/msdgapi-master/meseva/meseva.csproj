@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB2622FE-F3D3-4091-AB28-12513F460274}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>meseva</RootNamespace>
+    <AssemblyName>meseva</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IMI.SqlWrapper, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Documents\davinci\DLL\IMI.SqlWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheConfig.cs" />
+    <Compile Include="MesevaProcess.cs" />
+    <Compile Include="models\Requests\AdangalServiceRequests.cs" />
+    <Compile Include="models\Requests\Birth_DeathCDMAServiceRequests.cs" />
+    <Compile Include="models\Requests\Birth_DeathGHMCServiceRequests.cs" />
+    <Compile Include="models\Requests\CCRServiceRequests.cs" />
+    <Compile Include="models\Requests\CommonServiceRequests.cs" />
+    <Compile Include="models\Requests\CommunityDOBServiceRequests.cs" />
+    <Compile Include="models\Requests\EBCServiceRequests.cs" />
+    <Compile Include="models\Requests\EncumbranceServiceRequests.cs" />
+    <Compile Include="models\Requests\FMBCopyServiceRequests.cs" />
+    <Compile Include="models\Requests\FMServiceRequests.cs" />
+    <Compile Include="models\Requests\INAMLANDSServiceRequest.cs" />
+    <Compile Include="models\Requests\IncomeServiceRequests.cs" />
+    <Compile Include="models\Requests\MSRequest.cs" />
+    <Compile Include="models\Requests\MutationServiceRequests.cs" />
+    <Compile Include="models\Requests\OBCServiceRequests.cs" />
+    <Compile Include="models\Requests\PetroleumNOCServiceRequests.cs" />
+    <Compile Include="models\Requests\RORServiceRequests.cs" />
+    <Compile Include="models\Requests\TemplesServiceRequests.cs" />
+    <Compile Include="models\Requests\ResidanceServiceRequests.cs" />
+    <Compile Include="models\Requests\UpdateUserProfileReq.cs" />
+    <Compile Include="models\Requests\NewUserRegistraionReq.cs" />
+    <Compile Include="models\Responses\AdangalServiceResponses.cs" />
+    <Compile Include="models\Responses\Birth_DeathCDMAServiceResponses.cs" />
+    <Compile Include="models\Responses\CCRServiceResponses.cs" />
+    <Compile Include="models\Responses\CommonServiceResponses.cs" />
+    <Compile Include="models\Responses\CommunityDOBServiceResponses.cs" />
+    <Compile Include="models\Responses\EncumbranceServiceResponses.cs" />
+    <Compile Include="models\Responses\FMServiceResponses.cs" />
+    <Compile Include="models\Responses\Birth_DeathGHMCServiceResponses.cs" />
+    <Compile Include="models\Responses\MSResponse.cs" />
+    <Compile Include="models\Responses\MutationServiceResponses.cs" />
+    <Compile Include="models\Responses\PertroleumNOCServiceResponses.cs" />
+    <Compile Include="models\Responses\ReceiptBasedOnTransNoResp.cs" />
+    <Compile Include="models\Responses\RORServiceResponses.cs" />
+    <Compile Include="models\Responses\TempleServiceResponses.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\MesevaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\MSMQPush.cs" />
+    <Compile Include="Utilities\WebRequestProcess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\IMI.SqlWrapper.dll" />
+    <Content Include="dll\Newtonsoft.Json.dll" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\MesevaService\MeesevaMobileWebservice.disco" />
+    <None Include="Service References\MesevaService\configuration91.svcinfo" />
+    <None Include="Service References\MesevaService\configuration.svcinfo" />
+    <None Include="Service References\MesevaService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="XML\mesevaconfigurationSettings.xml" />
+    <None Include="Service References\MesevaService\MeesevaMobileWebservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MesevaService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,76 @@
+﻿@model AadharAdmin.Models.loginUserNew
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Plugins/Bootstrap/CustomBootstrapCss")
+
+@Scripts.Render("~/Plugins/Bootstrap/CustomBootstrapJs")
+<div class="row" ng-controller="LoginCtrl" ng-cloak="">
+    <div class="col s12 m12 whte-bc bg_white">
+        <div class="loader" ng-show="isLoading">
+            <div class="preloader-wrapper big active custom_loader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 m6 border mgn20 mgnl25p">
+            <div class="logowrap center-align h2">
+                <h2>Login</h2>
+            </div>
+            <div class="clearfix"></div>
+            <form action="@Url.Action("Login","Home")" method="post" autocomplete="off">
+                @Html.AntiForgeryToken()
+                <div class="innwrap" ng-hide="dv_ValidateOtp">                   
+                    <div class="row">
+                        <div class="col col-md-12 form-group">
+                            @Html.DropDownListFor(m => m.logintype,
+                           new List<SelectListItem> {
+                               new SelectListItem {Text="Admin",Value="ADMIN" },
+                               new SelectListItem {Text="Operator", Value="OPERATOR" }
+                       }, "Select Login Type", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.logintype)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-md-12 form-group">
+                            @Html.TextBoxFor(m => m.mobileno, new { numerics_Only = "", @class = "form-control", maxlength = "10", placeholder = "Enter Mobile Number" })
+                            @Html.ValidationMessageFor(m => m.mobileno)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 login-wrap right-align">
+                            <button type="submit" ng-click="CheckLoginFlow($event)" class="waves-effect waves-light btn cust-btn0">Login</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="innwrap" ng-show="dv_ValidateOtp">
+                    <div class="row">
+                        <div class="col col-md-12 form-group">
+                            @Html.TextBoxFor(m => m.otpVal, new { numerics_Only = "", @class = "form-control", maxlength = "6", placeholder = "Enter OTP Number" })
+                            @Html.ValidationMessageFor(m => m.otpVal)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 login-wrap right-align">
+                            <button type="submit" class="waves-effect waves-light btn cust-btn0">Verify OTP</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <input type="hidden" id="hdnVerify" value="@Url.Action("CheckLoginFlow","Home")" />
+        <input type="hidden" id="hdnIsInValidOtp" value="@ViewBag.InValidOtp"/>
+    </div>
+</div>
+<script src="~/Scripts/Home/IMI.LoginNew.js"></script>

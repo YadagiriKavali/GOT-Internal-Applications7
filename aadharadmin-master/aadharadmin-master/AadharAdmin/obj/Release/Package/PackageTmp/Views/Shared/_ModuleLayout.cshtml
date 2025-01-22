@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>TApp Folio Aadhaar Enrollment</title>
+    <link rel="shortcut icon" href="~/got.ico" type="image/x-icon" />
+    @Styles.Render("~/assets/css/CustomMaterializeCss")
+
+    @Styles.Render("~/Plugins/daterangepicker/CustomDtRangePickerCss")
+
+    @Styles.Render("~/assets/css/CustomCss")
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    @Styles.Render("~/Plugins/toaster/CustomToasterCss")
+
+    @Styles.Render("~/Plugins/JQdatatables/CustomJQDTCss")
+
+
+    <style>
+        .field-validation-error span {
+            color: red !important;
+        }
+    </style>
+    <style type="text/css">
+        @@media screen and (max-width:1024px) {
+            body {
+                background: #3e50b4;
+            }
+        }
+    </style>
+
+    @Scripts.Render("~/Scripts/CustomJqueryJs")
+
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/assets/js/CustomMaterializeJs")
+
+    @Scripts.Render("~/Scripts/an-js/CustomAngularJs")
+
+    @Scripts.Render("~/Scripts/an-js/CustomMatJs")
+
+    @Scripts.Render("~/Plugins/toaster/CustomToasterJs")
+
+    @Scripts.Render("~/Plugins/JQdatatables/CustomJQDTJs")
+
+    @Scripts.Render("~/Plugins/daterangepicker/CustomDtRangePickerJs")
+
+    <style>
+        .a_tags {
+            background-color: #b0b0b5;
+            color: white !important;
+        }
+
+        ul#ul_nav li a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body id="body_tag">
+    <div class="mainwrap1" ng-app="AadharModule">
+        @Html.Securitykey("Securitykey")
+        <!-- #region This is for Alert Notifications Coding Start-->
+        @if (ViewBag.Notifications != null)
+        {
+            Newtonsoft.Json.JsonSerializerSettings settings = new Newtonsoft.Json.JsonSerializerSettings
+            {
+                TypeNameHandling = Newtonsoft.Json.TypeNameHandling.All
+            };
+
+            List<AadharAdmin.Controllers.Alert> obj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AadharAdmin.Controllers.Alert>>(ViewBag.Notifications, settings);
+
+            foreach (AadharAdmin.Controllers.Alert notification in obj)
+            {
+                switch (notification.Type)
+                {
+                    case AadharAdmin.Controllers.AlertType.Success:
+        <script type="text/javascript">bootoast.toast({ type: 'success', timeout: 10,  message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Error:
+        <script type="text/javascript">bootoast.toast({ type: 'danger', timeout: 10,  message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Info:
+        <script type="text/javascript">bootoast.toast({ timeout: 10, message: '@notification.Message' });</script>
+                        break;
+                    case AadharAdmin.Controllers.AlertType.Warning:
+        <script type="text/javascript">bootoast.toast({ type: 'warning', timeout: 10, message: '@notification.Message' });</script>
+                        break;
+                }
+            }
+        }
+        <!--#endregion This is for Alert Notifications Coding End-->
+
+        @Html.Partial("_header")
+        <script src="~/Scripts/Common/directives.js"></script>
+        @RenderBody()
+        <footer style="text-align:center">
+            <p>&copy; @DateTime.Now.Year - Powered by <a href="https://imimobile.com/" target="_blank">IMImobile.</a></p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        window.setTimeout(function () {
+            $(".alert").fadeTo(10000, 0).slideUp(1000, function () {
+                $(this).remove();
+            });
+        }, 4000);
+    </script>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        $('#UserIcon').on('click', function () {
+            document.getElementById("myDropdown").classList.toggle("show");
+        });
+
+        window.onclick = function (event) {
+            if (event.target.id == "") {//.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("ddlContent");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

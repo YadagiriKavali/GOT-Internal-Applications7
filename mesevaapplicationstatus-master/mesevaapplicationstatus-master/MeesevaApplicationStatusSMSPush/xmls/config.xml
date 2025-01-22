@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MEESEVA>
+  <AUTHENTICATION UserName="MEESEVA" Password="MEESEVA">
+  </AUTHENTICATION>
+  <SERVICES>
+    <INCOME>806</INCOME>
+    <RESIDENCE>805</RESIDENCE>
+    <ADANGAL>802</ADANGAL>
+    <EBC>827</EBC>
+    <OBC>828</OBC>
+    <FM>830</FM>
+    <FMBCOPY>800</FMBCOPY>
+    <SSRSVD_SEVA>790</SSRSVD_SEVA>
+    <SRR_SEVA>717</SRR_SEVA>
+    <SRR_ROOM>3011</SRR_ROOM>
+    <SLNS_SEVA>709</SLNS_SEVA>
+    <SLNS_ROOM>719</SLNS_ROOM>
+    <ROR>803</ROR>
+    <PETROLEUM_NOC>930</PETROLEUM_NOC>
+    <INAM_LAND>936</INAM_LAND>
+    <BIRTHDEATH>813</BIRTHDEATH>
+    <BDCORRECTION>821</BDCORRECTION>
+    <CNINCLUSION>822</CNINCLUSION>
+    <NONAVAILABILITY>823</NONAVAILABILITY>
+    <MUTATION>801</MUTATION>
+    <COMMUNITY_DOB>1500</COMMUNITY_DOB>
+    <BIRTHDEATH_CDMA>845</BIRTHDEATH_CDMA>
+    <ENCUMBRANCE>815</ENCUMBRANCE>
+    <CCR>816</CCR>
+  </SERVICES>
+  <ERRORS>
+    <CODE_201>At least one income is mandatory</CODE_201>
+    <CODE_202>Date format should be dd/MM/yyyy</CODE_202>
+    <CODE_203>From date should not be less than 01/01/1983</CODE_203>
+    <CODE_204>Todate should not be less than from date</CODE_204>
+    <CODE_205>Invalid Date Format</CODE_205>
+    <CODE_206>Doc Affidavit is required</CODE_206>
+    <CODE_300>Error occurred while processing your request</CODE_300>
+    <CODE_301>Invalid Response</CODE_301>
+    <CODE_302>Unable to process your request</CODE_302>
+    <CODE_400>Inavlid Request</CODE_400>
+    <CODE_500>Internal Error</CODE_500>
+    <CODE_600>Request Timed out</CODE_600>
+    <CODE_5555>
+      Data Not Available for requested Khata Number at Dept end!. Reasons  may be:
+      1. Thahsildar Signature Mismatched.
+      2. No records found at Dept end.
+      3. Matching Occupant Not Found.
+      Please contact Thahsildar office.
+    </CODE_5555>
+    <CODE_900>Dear User, currently we are unable to process your request. Please try after sometime.</CODE_900>
+    <CODE_901>Invalid transaction</CODE_901>
+    <CODE_902>Duplicate transaction</CODE_902>
+  </ERRORS>
+</MEESEVA>

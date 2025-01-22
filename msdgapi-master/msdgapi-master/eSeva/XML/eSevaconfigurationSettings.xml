@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <ESEVA>
+    <AUTHENTICATION Groupid="MA2" UserId="ESEVA" Password="ESEVA78#789" Serviceid="107" Staffcode="MSDG001" Centrecode="MSDG" Distcode="49">
+    </AUTHENTICATION>
+    <DEPTS>
+      <AIRTEL DeptCode="24" />
+      <AIRTEL_LANDLINE DeptCode="60" />
+      <IDEA DeptCode="37" />
+      <HMWSSB DeptCode="1" />
+      <ACT DeptCode="69" />
+      <RTAFEE DeptCode="16" />
+      <TTL DeptCode="15" />
+      <TSSPDCL DeptCode="103" />
+    </DEPTS>
+    <ERRORS>
+      <CODE_400>Inavlid Request</CODE_400>
+      <CODE_500>Internal Error</CODE_500>
+      <CODE_300>Error occurred while processing your request</CODE_300>
+      <CODE_201>Invalid mobile number</CODE_201>
+      <CODE_202>Inavlid Land line number</CODE_202>
+      <CODE_203>Inavlid can number</CODE_203>
+    </ERRORS>
+  </ESEVA>
+</Config>

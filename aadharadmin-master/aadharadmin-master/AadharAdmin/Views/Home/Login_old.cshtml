@@ -1,0 +1,44 @@
+﻿@model AadharAdmin.Models.loginUser
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" ng-controller="LoginCtrl" ng-cloak="">
+    <div class="col s12 m12 whte-bc bg_white">
+        <div class="col s6 m6 border mgn20 mgnl25p">
+            <div class="logowrap center-align h2">
+                <h2>Login</h2>
+            </div>
+            <div class="clearfix"></div>
+            <form action="@Url.Action("Login","Home")" method="post" autocomplete="off">
+                <div class="innwrap">
+                    <span id="ErrMsg">
+                        @Html.Raw(ViewBag.ErrMsg)
+                    </span>
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="input-field col s12 m12">
+                            @Html.TextBoxFor(m => m.username, new { required = "required", @maxlength = "50", @autocomplete = "off", @autofocus = "autofocus" })
+                            <label for="userid">Username</label>
+                        </div>
+                        @Html.ValidationMessageFor(m => m.username)
+                    </div>
+                    <div class="row mgnb0">
+                        <div class="input-field col s12 m12">
+                            @Html.PasswordFor(m => m.password, new { required = "required", @maxlength = "15", @autocomplete = "off" })
+                            <label for="pin">Password</label>
+                        </div>
+                        @Html.ValidationMessageFor(m => m.password)
+                    </div>                    
+                    <div class="row">
+                        <div class="col s12 m12 login-wrap right-align">
+                            <button type="submit" class="waves-effect waves-light btn cust-btn0">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/Home/IMI.Login.js"></script>

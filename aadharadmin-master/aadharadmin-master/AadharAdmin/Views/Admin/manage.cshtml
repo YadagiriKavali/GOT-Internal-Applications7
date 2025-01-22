@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewBag.Title = "manage";
+    Layout = "~/Views/Shared/_ModuleLayout.cshtml";
+}
+
+@Styles.Render("~/Plugins/Bootstrap/CustomBootstrapCss")
+
+@Scripts.Render("~/Plugins/Bootstrap/CustomBootstrapJs")
+
+<link href="~/Plugins/BootDatePicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+<script src="~/Plugins/BootDatePicker/bootstrap-datepicker.min.js"></script>
+<style>
+
+    .select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+     display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff; 
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.select2-results span[ng-class="0"] { 
+  color: red;
+}
+
+.select2-results span[ng-class="1"] { 
+  color: green;
+}
+    </style>
+
+<section ng-controller="ManageCtrl" ng-cloak="">
+    <div class="container">
+        <div class="loader" ng-show="isLoading">
+            <div class="preloader-wrapper big active custom_loader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <form class="col s12 forms-summary">
+                    <div class="card-panel recipt-aligmnt p-0">
+                        <div class="row">
+                            <h3 class="header-admin">Manage</h3>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="form-group col-6">
+                                <label class="control-label">Action</label>
+                                <select ng-model="optType" class="form-control" ng-change="changeType(optType)">
+                                    <option value="">Select Action</option>
+                                    <option value="DISABLE">Disable</option>
+                                    <option value="ENABLE">Enable</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6" ng-show="dv_CatVal">
+                                <label class="control-label">Category</label>
+                                <select ng-model="typeVal" class="form-control" ng-change="onChangeTypeVal(typeVal)">
+                                    <option value="">Select Category</option>
+                                    <option value="DISTRICT">District</option>
+                                    <option value="CENTER">Centers</option>
+                                    <option value="DATE">Dates</option>
+                                    <option value="HOUR">Hour</option>
+                                    <option value="SLOT">TimeSlots</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div ng-show="dv_CatVal">
+                            <div class="row">
+                                <div class="form-group col-6" ng-show="dv_district">
+                                    <label class="control-label">District</label>
+                                    <select id="slotDistricts" ng-model="district" class="form-control basic_select2" ng-change="onChangeDistricts(district)">
+                                        <option value="">Select Districts</option>
+                                        <option ng-repeat="district in optDistrict" ng-class="{{district.status}}" ng-disabled="(district.name=='All' && typeVal=='CENTER') || (district.name=='All' && typeVal=='DISTRICT')" value="{{district.id}}">{{district.name}}</option>
+                                    </select>
+                                    <!--ng-disabled="(optType=='DISABLE' && district.status=='0' || optType=='ENABLE' && district.status=='1') ? true : false"-->
+                                </div>
+                                <div class="form-group col-6 center-ul-list" ng-show="dv_center">
+                                    <label class="control-label">Centers</label>
+                                    <select ng-model="center" id="slotCenters" class="form-control basic_center" ng-change="onChangeCenter(center)">
+                                        <option value="">Select Centers</option>
+                                        <option ng-repeat="center in optCenters" ng-class="{{center.status}}" value="{{center.id}}">
+                                            {{center.name}}                                      
+                                        </option>
+                                    </select>
+                                </div>
+                                <!--ng-disabled="(optType=='DISABLE' && center.status=='0' || optType=='ENABLE' && center.status=='1') ? true : false"-->
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-6" ng-show="dv_slot_date">
+                                    <label class="control-label">Avaliable Slot Dates for: {{optType}}</label>
+                                    <input id="slotDatePicker" type="text" ng-model="slotdate" ng-change="onSlotDateChange(slotdate)" readonly class="form-control" />
+                                </div>
+                                <div class="form-group col-6" ng-show="dv_hour_slot">
+                                    <label class="control-label">Hour</label>
+                                    <select ng-model="hourslot" class="form-control hour_select2" ng-change="onChangeHour(hourslot)">
+                                        <option value="">Select Hour</option>
+                                        <option ng-repeat="hourslot in optHours" ng-class="{{hourslot.status}}" value="{{hourslot.hour_id}}">{{hourslot.hour}}</option>
+                                    </select>                                  
+                                    <!--<select ng-model="hourslot" class="form-control hour_select2" ng-change="onChangeHour(hourslot)">
+                                        <option value="">Select Hour</option>
+                                        <option value="1">10:00 - 11:00</option>
+                                        <option value="2">11:00 - 12:00</option>
+                                        <option value="3">12:00 - 01:00</option>
+                                        <option value="4">01:00 - 02:00</option>
+                                        <option value="5">02:00 - 03:00</option>
+                                        <option value="6">03:00 - 04:00</option>
+                                        <option value="7">04:00 - 05:00</option>
+                                        <option value="8">05:00 - 06:00</option>
+                                    </select>-->                                      
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-6" ng-show="dv_time_slot">
+                                    <label class="control-label">Time Slots</label>
+                                    <select ng-model="timeslot" class="form-control timeSlot_select2" ng-change="onChangeSlot(timeslot)">
+                                        <option value="">Select Time Slots</option>
+                                        <option ng-repeat="timeslot in optSlots" ng-class="{{timeslot.status}}" value="{{timeslot.id}}">{{timeslot.slot}}</option>
+                                    </select>
+                                    <!--ng-disabled="timeslot.status=='0' ? true : false"-->
+                                </div>
+                            </div>
+                            <div class="row" ng-show="dv_NoOfSlots">
+                                <div class="form-group col-6">
+                                    <label class="control-label">No Of Booked Slots : <span style="color:red">{{NoOfBookedSlots}}</span></label>
+                                </div>
+                            </div>
+                            <div class="row" ng-show="dv_Enable">
+                                <div class="col s12 m12 center-align login-wrap">
+                                    <button type="button" ng-click="EnableSubmit()" class="waves-effect waves-light btn cust-btn0 mgnl15 mgnb10">Enable</button>
+                                    <button type="button" ng-click="reSet()" class="waves-effect waves-light btn cust-btn0 mgnl15 mgnb10">Reset</button>
+                                </div>
+                            </div>
+                            <div class="row" ng-hide="dv_Enable">
+                                <div class="col s12 m12 center-align login-wrap">
+                                    <button type="button" ng-click="DisableSubmit()" class="waves-effect waves-light btn cust-btn0 mgnl15 mgnb10">Disable</button>
+                                    <button type="button" ng-click="reSet()" class="waves-effect waves-light btn cust-btn0 mgnl15 mgnb10">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="hidden" id="hdnGetDistricts" value="@Url.Action("GetDistricts","Admin")" />
+            <input type="hidden" id="hdnGetCenters" value="@Url.Action("GetCenters","Admin")" />
+            <input type="hidden" id="hdnGetSlotDates" value="@Url.Action("GetSlotDates","Admin")" />
+            <input type="hidden" id="hdnGetSlotTimes" value="@Url.Action("GetSlotTimes","Admin")" />
+            <input type="hidden" id="hdnAdminSubmit" value="@Url.Action("AdminSubmit","Admin")" />
+            <input type="hidden" id="hdnBookedSlotsCount" value="@Url.Action("BookedSlotsCount","Admin")" />
+        </div>
+    </div>
+</section>
+<script src="~/Scripts/Admin/IMI.AdminManage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#ul_nav li.active').removeClass('active');
+        $('#li_manage').addClass('active');
+        $('#li_manage a').removeAttr("href");
+    })
+</script>
+ 
+
+

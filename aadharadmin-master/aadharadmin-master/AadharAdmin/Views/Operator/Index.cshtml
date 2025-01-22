@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ModuleLayout.cshtml";
+}
+
+<script src="~/Plugins/JQdatatables/buttons.html5.min.js"></script>
+<script src="~/Plugins/JQdatatables/jszip.min.js"></script>
+<script src="~/Plugins/JQdatatables/dataTables.buttons.min.js"></script>
+@Styles.Render("~/Plugins/Bootstrap/CustomBootstrapCss")
+<style>
+        #TransHistory_wrapper button {
+    border:none;
+    }
+    #TransHistory_wrapper button:hover {
+    color: #000;
+}    #TransHistory_wrapper button:focus {
+    color: #000;
+    box-shadow:none;
+}
+     .modal{ max-height: max-content;}
+</style>
+<section ng-controller="OperIndexCtrl" ng-cloak="">
+    <div class="container">
+        <div class="loader" ng-show="isLoading">
+            <div class="preloader-wrapper big active custom_loader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="row">
+                    <h3 class="padding-10 pdgb0 left mgnl10 ff_bold mgnt20 mgnr15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <div class="col s12 m3 left mgnr15">
+                        <div class="input-field col s12 m12">                                                        
+                            <input id="SlotDateRange" type="text" class="form-control" autocomplete="off" />
+                            <label for="startDate">Start Date</label>
+                        </div>
+                    </div>                     
+                    <div class="col s12 m3 left">
+                        <div class="input-field col s12 m12">
+                            <button class="waves-effect waves-light btn cust_search_btn0" ng-click="SearchData()">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <form class="col s12 forms-summary">
+                    <div class="card-panel recipt-aligmnt">
+                        <div class="row">
+                            <div class="restable-bulk">
+                                <table id="TransHistory" class="responsive-table display " cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>TRANSID</th>
+                                            <th>SLOTDATE</th>
+                                            <th>SLOTTIME</th>
+                                            <th>DISTRICT</th>
+                                            <th>CENTER</th>
+                                            <th>NAME</th>
+                                            <th>STATUS</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="hidden" id="hndGetTransData" value="@Url.Action("GetTransDetails","Operator")" />
+            <input type="hidden" id="hndUserSlotAuth" value="@Url.Action("UserSlotAuth","Operator")" />
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content pb-0">
+            <div class="row pl-3 pr-3 mb-0 pb-0">
+                <form class="col s12 forms-summary" name="myForm">
+                    <h3>Authenticate</h3>
+                    <p>To authenticate a user with his/her passcode</p>
+                    <div class="row">
+                        <div class="col-2 pr-0">
+                            <label class="title_name w-100 text-left">MGOV Id :</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="left">
+                                <label class="title_name" id="mgovid"></label>
+                                <input type="hidden" id="hdnSlotDate" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="input-field col s12 m12">
+                            <input class="form-control" type="tel" name="usrPassCode" ng-model="usrPassCode" numerics-Only="" maxlength="6" required/>
+                            <label for="userpasscode">Passcode</label>
+                            <span ng-show="myForm.usrPassCode.$touched && myForm.usrPassCode.$invalid" style="color:red;">Please enter passcode</span>
+                        </div>
+                    </div>                  
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="javaScript:void(0);" class="mr-3 waves-effect waves-red btn-flat btn-primary" ng-click="AuthPassCode()">Authenticate</a>
+            <a href="javaScript:void(0);" ng-click="checkTogal()" id="btnClose" class="modal-close mr-4 modal-close waves-effect waves-green btn-flat btn-danger"> Cancel</a>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        //#region Date Range Picker
+        var start = moment();
+        //var end = moment();
+        setTimeout(function () {
+            $('#SlotDateRange').daterangepicker({
+                timePicker: false,
+                startDate: moment(),
+                endDate: moment(),
+                locale: {
+                    format: 'DD/MM/YYYY'
+                },
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            });
+        }, 200);
+
+        //#endregion
+    });
+</script>
+<script src="~/Scripts/Operator/IMI.OperatorIndex.js"></script>
+
+

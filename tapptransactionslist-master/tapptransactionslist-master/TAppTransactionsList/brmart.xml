@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response>
+  <errorcode>0</errorcode>
+  <errortext>Sucess</errortext>
+  <Recharges>
+    <Recharge>
+      <loginid>190794</loginid>
+      <username>API190794</username>
+      <CreatedBy>T APP FOLIO</CreatedBy>
+      <TID>1922820</TID>
+      <RechargeID>1922815</RechargeID>
+      <TDateTime>2020-01-07 14:34:19</TDateTime>
+      <UDateTime>2020-01-07 14:35:29</UDateTime>
+      <MobileNumber>8008597758</MobileNumber>
+      <Amount>200</Amount>
+      <CommissionAmount>1.5</CommissionAmount>
+      <DebitAmount>198.5</DebitAmount>
+      <BeforeBalance>78407.21</BeforeBalance>
+      <AfterBalance>78407.21</AfterBalance>
+      <OperatorCode>AR</OperatorCode>
+      <Operator>Airtel</Operator>
+      <StatusDescp>Failure</StatusDescp>
+      <State>1</State>
+      <StateName>ANDHRA PRADESH</StateName>
+      <RechargeClient>API</RechargeClient>
+      <ComplaintStatus>0</ComplaintStatus>
+      <Status>1</Status>
+      <StatusText>Failed</StatusText>
+      <RemainingBalance>78,407.21</RemainingBalance>
+      <ActualTID />
+      <Client_ID>460bb0fd360e450da44a9484621310ef</Client_ID>
+      <STSChannelId />
+      <STSOperatorId />
+      <STSRequestId />
+      <STSFullName />
+      <STSEmail />
+      <STSMobile />
+    </Recharge>
+    <Recharge>
+      <loginid>190794</loginid>
+      <username>API190794</username>
+      <CreatedBy>T APP FOLIO</CreatedBy>
+      <TID>1922809</TID>
+      <RechargeID>1922809</RechargeID>
+      <TDateTime>2020-01-07 14:17:16</TDateTime>
+      <UDateTime>2020-01-07 14:17:31</UDateTime>
+      <MobileNumber>3030030337</MobileNumber>
+      <Amount>360</Amount>
+      <CommissionAmount>3.6</CommissionAmount>
+      <DebitAmount>356.4</DebitAmount>
+      <BeforeBalance>78763.61</BeforeBalance>
+      <AfterBalance>78407.21</AfterBalance>
+      <OperatorCode>AT</OperatorCode>
+      <Operator>AIRTEL TV Mobile</Operator>
+      <StatusDescp>Success</StatusDescp>
+      <State>1</State>
+      <StateName>ANDHRA PRADESH</StateName>
+      <RechargeClient>API</RechargeClient>
+      <ComplaintStatus>0</ComplaintStatus>
+      <Status>0</Status>
+      <StatusText>Success</StatusText>
+      <RemainingBalance>78,407.21</RemainingBalance>
+      <ActualTID>346922642-MD</ActualTID>
+      <Client_ID>888531a192734445b78eb99f8e2e2ac5</Client_ID>
+      <STSChannelId />
+      <STSOperatorId />
+      <STSRequestId />
+      <STSFullName />
+      <STSEmail />
+      <STSMobile />
+    </Recharge>
+  </Recharges>
+</response>

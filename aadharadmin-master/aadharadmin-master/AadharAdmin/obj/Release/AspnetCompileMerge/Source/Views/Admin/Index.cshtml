@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ModuleLayout.cshtml";
+}
+
+<script src="~/Plugins/JQdatatables/buttons.html5.min.js"></script>
+<script src="~/Plugins/JQdatatables/jszip.min.js"></script>
+<script src="~/Plugins/JQdatatables/dataTables.buttons.min.js"></script>
+
+@Styles.Render("~/Plugins/Bootstrap/CustomBootstrapCss")
+
+@Scripts.Render("~/Plugins/Bootstrap/CustomBootstrapJs")
+
+<style>
+.select2-container--default .select2-selection--single {
+border: 1px solid #d1d7dc;
+}
+.select2-container .select2-selection--single {
+height: 35px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+line-height: 35px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+height: 35px;
+}
+.cust_search_btn0 {
+margin-top: 0; 
+}
+input#SlotDateRange {
+    background: #fff;
+    border: 1px solid #d0d6db;
+    padding: 0px 0px 0px 20px;
+    font-size: 16px;
+    height: 36px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: black;
+
+}
+    #TransHistory_wrapper button {
+    border:none;
+    }
+    #TransHistory_wrapper button:hover {
+    color: #000;
+}    #TransHistory_wrapper button:focus {
+    color: #000;
+    box-shadow:none;
+}
+</style>
+<section ng-controller="AdminIndexCtrl" ng-cloak="">
+    <div class="container">
+        <div class="loader" ng-show="isLoading">
+            <div class="preloader-wrapper big active custom_loader">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="row">                   
+                    <div class="col-3">
+                        <div class="input-field col s12 m12">
+                            <input id="SlotDateRange" type="text" class="form-control" autocomplete="off" />                            
+                        </div>
+                    </div>
+                    <div class="col-9 row">
+                        <div class="col-3">
+                            <div class="input-field col s12 m12">
+                                <select id="districtId" ng-model="district" class="form-control basic_select2" ng-change="onChangeDistricts(district)">
+                                    <option value="0">Select Districts</option>
+                                    <option ng-repeat="district in optDistrict | orderBy : 'name'" value="{{district.id}}">{{district.name}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-field col s12 m12">
+                                <select ng-model="center" id="slotCenters" class="form-control basic_select2">
+                                    <option value="">Select Center</option>
+                                    <option ng-repeat="center in optCenters | orderBy : 'name'" value="{{center.id}}">{{center.name}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-field col s12 m12">
+                                <select ng-model="status" class="form-control">
+                                    <option value="">Select Status</option>
+                                    <option value="1">To be completed</option>
+                                    <option value="2">Completed</option>
+                                    <option value="3">Cancelled by user</option>
+                                    <option value="4">Cancelled by admin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="input-field col s12 m12">
+                                <button class="waves-effect waves-light btn cust_search_btn0" ng-click="SearchData()">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <form class="col s12 forms-summary">
+                    <div class="card-panel recipt-aligmnt">
+                        <div class="row">
+                            <div class="restable-bulk">
+                                <table id="TransHistory" class="responsive-table display " cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>TRANSID</th>
+                                            <th>SLOTDATE</th>
+                                            <th>SLOTTIME</th>
+                                            <th>DISTRICT</th>
+                                            <th>CENTER</th>
+                                            <th>NAME</th>
+                                            <th>STATUS</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="hidden" id="hndGetTransData" value="@Url.Action("GetTransDetails","Admin")" />  
+            <input type="hidden" id="hdnGetDistricts" value="@Url.Action("GetDistricts","Admin")" />     
+            <input type="hidden" id="hdnGetCenters" value="@Url.Action("GetCenters","Admin")" />      
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        //#region Date Range Picker
+        var start = moment();
+        //var end = moment();
+        setTimeout(function () {
+            $('#SlotDateRange').daterangepicker({
+                timePicker: false,
+                startDate: moment(),
+                endDate: moment(),
+                locale: {
+                    format: 'DD/MM/YYYY'
+                },
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            });
+        }, 200);
+
+        //#endregion
+    });
+</script>
+<script src="~/Scripts/Admin/IMI.AdminIndex.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#ul_nav li.active').removeClass('active');
+        $('#li_trans').addClass('active');
+        $('#li_trans a').removeAttr("href");
+    })
+</script> 

@@ -1,0 +1,187 @@
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\ApplicationInsights.config
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\csc.exe
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\System.Collections.Immutable.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\vbc.exe
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\VBCSCompiler.exe
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\roslyn\VBCSCompiler.exe.config
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\AadharAdmin.dll.config
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\AadharAdmin.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\AadharAdmin.pdb
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Antlr3.Runtime.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\IMI.Helper.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\IMI.SqlWrapper.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.DependencyCollector.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.Web.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.WindowsServer.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.ApplicationInsights.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.Web.Infrastructure.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Newtonsoft.Json.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Net.Http.Formatting.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Helpers.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Http.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Http.WebHost.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Mvc.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Optimization.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Razor.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.Deployment.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.Razor.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\WebGrease.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.DependencyCollector.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.Web.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.AI.WindowsServer.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.ApplicationInsights.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Newtonsoft.Json.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Net.Http.Formatting.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Helpers.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Http.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Http.WebHost.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Mvc.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Optimization.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.Razor.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.Deployment.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\System.Web.WebPages.Razor.xml
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\bin\Antlr3.Runtime.pdb
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\obj\Debug\AadharAdmin.dll
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\obj\Debug\AadharAdmin.pdb
+D:\Applications\GOT\AAdharAdmin\AadharAdmin\AadharAdmin\obj\Debug\AadharAdmin.csprojResolveAssemblyReference.cache
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\ApplicationInsights.config
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\csc.exe
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\vbc.exe
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\VBCSCompiler.exe
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.dll.config
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.pdb
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Antlr3.Runtime.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\IMI.Helper.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\IMI.SqlWrapper.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Web.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Newtonsoft.Json.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Net.Http.Formatting.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Helpers.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.WebHost.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Mvc.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Optimization.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Razor.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Deployment.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Razor.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\WebGrease.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Web.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Newtonsoft.Json.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Net.Http.Formatting.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Helpers.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.WebHost.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Mvc.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Optimization.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Razor.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Deployment.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Razor.xml
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Antlr3.Runtime.pdb
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csproj.AssemblyReference.cache
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csproj.CoreCompileInputs.cache
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csproj.CopyComplete
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.dll
+C:\Users\psirasan\Downloads\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.pdb
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\ApplicationInsights.config
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\csc.exe
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\System.Collections.Immutable.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\vbc.exe
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\VBCSCompiler.exe
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\roslyn\VBCSCompiler.exe.config
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.dll.config
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\AadharAdmin.pdb
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Antlr3.Runtime.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\IMI.Helper.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\IMI.SqlWrapper.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Agent.Intercept.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.DependencyCollector.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Web.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.WindowsServer.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.ApplicationInsights.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.Web.Infrastructure.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Newtonsoft.Json.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Net.Http.Formatting.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Helpers.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.WebHost.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Mvc.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Optimization.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Razor.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Deployment.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Razor.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\WebGrease.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.DependencyCollector.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.Web.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.AI.WindowsServer.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.ApplicationInsights.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Newtonsoft.Json.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Net.Http.Formatting.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Helpers.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Http.WebHost.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Mvc.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Optimization.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.Razor.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Deployment.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\System.Web.WebPages.Razor.xml
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\bin\Antlr3.Runtime.pdb
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csprojAssemblyReference.cache
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csproj.CoreCompileInputs.cache
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.csproj.CopyComplete
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.dll
+D:\TappCode\TAPP_CODE\Control API\Source_Code\GOT Internal Applications\aadharadmin-master\aadharadmin-master\AadharAdmin\obj\Debug\AadharAdmin.pdb

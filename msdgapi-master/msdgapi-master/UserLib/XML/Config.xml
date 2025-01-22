@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XML>
+  <USERS>
+    <SUCCESS>
+      <INSERT>User Details Saved Successfully</INSERT>
+      <UPDATE>User Details Updated Successfully</UPDATE>
+      <DELETE>User Deleted Successfully</DELETE>
+      <PWDUPDT>User Password Updated Successfully</PWDUPDT>
+    </SUCCESS>
+    <ERROR>
+      <USERID_EXISTS>User already exists</USERID_EXISTS>
+      <USERID_NOTEXISTS>User does not exists</USERID_NOTEXISTS>
+    </ERROR>
+  </USERS>
+</XML>

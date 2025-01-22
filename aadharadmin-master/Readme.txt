@@ -1,0 +1,1 @@
+This is a web UI to manage Aadhaar slot booking related information and adding centers, disabling centers/dates/Slots

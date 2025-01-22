@@ -1,0 +1,1767 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <user>
+    <checkuserdetail>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="pwd" required="true" required-message="Password is required" />
+      <item param="email" required="false" required-message="Email is required" />
+      <item param="ip" required="true" required-message="IP Address is required" />
+    </checkuserdetail>
+    <userregistration>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="pwd" required="true" required-message="Password is required" />
+      <item param="email" required="true" required-message="Email is required" />
+      <item param="ip" required="true" required-message="IP Address is required" />
+    </userregistration>
+  </user>
+  <eseva>
+    <airtelbill>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" pattern="^([0-9]{10})$" required-message="Number is required" invalid-message="Invalid Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </airtelbill>
+    <airtellandlinebill>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" pattern="^([0-9]{10})$" required-message="Number is required" invalid-message="Invalid Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </airtellandlinebill>
+    <ideabill>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" pattern="^([0-9]{10})$" required-message="Number is required" invalid-message="Invalid Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </ideabill>
+    <waterbill>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" pattern="^([0-9]{9})$" required-message="Number is required" invalid-message="Invalid Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </waterbill>
+    <actbilldetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" pattern="^([0-9]{10})$" required-message="Number is required" invalid-message="Invalid Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </actbilldetails>
+    <rtafeepaymentdetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </rtafeepaymentdetails>
+    <billpayment>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="network" required="true" required-message="Network is required" />
+      <item param="accountno" required="false" required-message="Account No is required" />
+      <item param="amount" required="true" required-message="Amount is required" />
+      <item param="billrefno" required="true" required-message="Bill Reference no is required" />
+    </billpayment>
+    <receiptreprint>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number(Required Id) is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </receiptreprint>
+    <ttlbilldetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </ttlbilldetails>
+    <getdistlist>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="false" required-message="Number is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </getdistlist>
+    <getcpdclerolist>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number(Dist Code) is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="distcode" required="true" required-message="Dist code is required" />
+    </getcpdclerolist>
+    <getcpdclbill>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="number" required="true" required-message="Number(Consumer No) is required" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="erocode" required="true" required-message="ERO Code is required" />
+    </getcpdclbill>
+  </eseva>
+  <meseva>
+    <generateapplicationno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+    </generateapplicationno>
+    <populatedistrict>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatedistrict>
+    <populaterevenuedistrict>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populaterevenuedistrict>
+    <populatemandal>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District id is required" />
+    </populatemandal>
+    <populaterevenuemandal>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District id is required" />
+    </populaterevenuemandal>
+    <populatevillage>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+    </populatevillage>
+    <populaterevenuevillage>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+    </populaterevenuevillage>
+    <getservicecharges>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+    </getservicecharges>
+    <getincometransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message=" Document ref number is required" />
+      <item param="addressflag" required="true" required-message="Address flag is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="fathername" required="true" required-message="Father name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="permanentdoorno"  required="false" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent pincode is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal district is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal pincode is required" />
+      <item param="stateid" required="true" required-message="State id is required" />
+      <item param="emailid" required="false" required-message="Email id is required" />
+      <item param="phone" required="false" required-message="Phone id is required" />
+      <item param="remarks" required="false" required-message="Remark is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="true" required-message="Aadhaar no is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="landincome" required="true" required-message="Land income is required" />
+      <item param="businessincome" required="true" required-message="Business income is required" />
+      <item param="buildingincome" required="true" required-message="Building income is required" />
+      <item param="labourincome" required="true" required-message="Labour income is required" />
+      <item param="empsal" required="true" required-message="Employee salary is required" />
+      <item param="otherincome" required="true" required-message="Other income is required" />
+      <item param="totalincome" required="true" required-message="Total income is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="servicecharge" required="true" required-message="Service charge is required" />
+      <item param="usercharge" required="true" required-message="User charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal charge is required" />
+      <item param="totalamount" required="true" required-message="Total amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+      <item param="docincomeproof" required="false" required-message="Document income proof is required" />
+    </getincometransactionno>
+    <getresidancetransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message=" Document ref number is required" />
+      <item param="addressflag" required="true" required-message="Address flag is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="fathername" required="true" required-message="Father name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="permanentdoorno" required="false" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent pincode is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal district is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal pincode is required" />
+      <item param="stateid" required="true" required-message="State id is required" />
+      <item param="emailid" required="true" required-message="Email id is required" />
+      <item param="phoneno" required="false" required-message="Phone number id is required" />
+      <item param="remarks" required="false" required-message="Remark is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="true" required-message="Aadhaar no is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="residingsinceinyears" required="true" required-message="Residing Since in Years is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+      <item param="dochouseproof" required="false" required-message="Document House Proof is required" />
+      <item param="docphoto" required="false" required-message="Document Photo is required" />
+    </getresidancetransactionno>
+    <getresidencecertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getresidencecertificatepdf>
+    <newuserregistration>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="firstname" required="false" required-message="First name is required" />
+      <item param="latsname" required="false" required-message="Last name is required" />
+      <item param="gender" required="false" required-message="Gender is required" />
+      <item param="dob" required="false" required-message="Date of birth is required" />
+      <item param="state" required="false" required-message="State is required" />
+      <item param="city" required="false" required-message="City is required" />
+      <item param="addressline1" required="false" required-message="Address Line1 is required" />
+      <item param="addressline2" required="false" required-message="Address Line2 is required" />
+      <item param="pincode" required="false" required-message="Pincode is required" />
+      <item param="emailid" required="true" required-message="Email is required" />
+      <item param="loginid" required="true" required-message="Login Id is required" />
+      <item param="loginpassword" required="true" required-message="Login password is required" />
+      <item param="systemip" required="true" required-message="System IP is required" />
+      <item param="adharno" required="false" required-message="Adhar no is required" />
+    </newuserregistration>
+    <updateuserprofile>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="address1" required="false" required-message="Address 1 is required" />
+      <item param="address2" required="false" required-message="Address 2 is required" />
+      <item param="state" required="false" required-message="State is required" />
+      <item param="city" required="false" required-message="City is required" />
+      <item param="emailid" required="false" required-message="Email is required" />
+      <item param="loginid" required="true" required-message="Login Id is required" />
+      <item param="loginpassword" required="true" required-message="Login password is required" />
+      <item param="updatedpassword" required="false" required-message="Updated password is required" />
+      <item param="roleid" required="true" required-message="Role id is required" />
+    </updateuserprofile>
+    <populaterevenuedocyear>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populaterevenuedocyear>
+    <populatesurveynumber>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+      <item param="villageid" required="true" required-message="Village id is required" />
+      <item param="docyear" required="true" required-message="DocYear is required" />
+    </populatesurveynumber>
+    <populateadangaldetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+      <item param="villageid" required="true" required-message="Village id is required" />
+      <item param="docyear" required="true" required-message="DocYear is required" />
+      <item param="surveyno" required="true" required-message="Survey No is required" />
+      <item param="iscropdetails" required="true" required-message="IsCropDetails is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </populateadangaldetails>
+    <getadangaltransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="documentrefnumbers" required="true" required-message=" Document ref number is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="applicantname" required="false" required-message="Application name is required" />
+      <item param="applicantdistrict" required="true" required-message="Applicant district is required" />
+      <item param="applicantmandal" required="true" required-message="Applicant mandal is required" />
+      <item param="applicantvillage" required="true" required-message="Applicant village is required" />
+      <item param="cropflag" required="true" required-message="Crop flag is required" />
+      <item param="deliverytype" required="false" required-message="Delivery type is required" />
+      <item param="emailid" required="false" required-message="Email id is required" />
+      <item param="phoneno" required="false" required-message="Phone id is required" />
+      <item param="fathername" required="false" required-message="Father name is required" />
+      <item param="gender" required="false" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="permanentdoorno" required="false" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="perstate" required="false" required-message="Permanent state is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent pincode is required" />
+      <item param="postaldistrict" required="true" required-message="Postal district is required" />
+      <item param="postaldoorno" required="false" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" required-message="Postal locality is required" />
+      <item param="postalmandal" required="true" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" required-message="Postal pincode is required" />
+      <item param="postalstate" required="false" required-message="Postal state is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="true" required-message="Aadhaar no is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charges is required" />
+      <item param="usercharge" required="true" required-message="User charge is required" />
+      <item param="totalamount" required="true" required-message="Total amount is required" />
+      <item param="docyear" required="true" required-message="DocYear is required" />
+      <item param="docdistrictid" required="true" required-message="Document district Id is required" />
+      <item param="docmandalid" required="true" required-message="Document mandal Id is required" />
+      <item param="docvillageid" required="true" required-message="Document villageId is required" />
+      <item param="docsurveyno" required="true" required-message="Document survey No is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+    </getadangaltransactionno>
+    <getreceiptbasedontransno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="transactionno" required="true" required-message="Transaction no is required" />
+      <item param="service" required="true" required-message="Service is required" />
+    </getreceiptbasedontransno>
+    <getappstatus>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getappstatus>
+    <getincomecertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getincomecertificatepdf>
+    <getadangalcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getadangalcertificatepdf>
+    <populaterelation>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populaterelation>
+    <populatecaste>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+    </populatecaste>
+    <populatereligion>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatereligion>
+    <getebctransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message=" Document ref number is required" />
+      <item param="addressflag" required="true" required-message="Address flag is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="relation" required="true" required-message="Relation name is required" />
+      <item param="fathername" required="true" required-message="Father name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="true" required-message="DOB is required" />
+      <item param="permanentdoorno" required="true" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="true" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="true" required-message="Permanent pincode is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal district is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal pincode is required" />
+      <item param="stateid" required="true" required-message="State id is required" />
+      <item param="emailid" required="false" required-message="Email id is required" />
+      <item param="phoneno" required="false" required-message="Phone number id is required" />
+      <item param="remarks" required="false" required-message="Remark is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="issuedcastecertificateinpast" required="true" required-message="Issued Caste Certificate In Past is required" />
+      <item param="casteclaimed" required="true" required-message="Caste Claimed is required" />
+      <item param="castecategory" required="true" required-message="Caste Category is required" />
+      <item param="religion" required="true" required-message="Religion is required" />
+      <item param="purposeofcastecertificate" required="true" required-message="Purpose of Caste Certificate is required" />
+      <item param="familyincome" required="true" required-message="Family Income is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+    </getebctransactionno>
+    <getebccertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getebccertificatepdf>
+    <getobctransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message=" Document ref number is required" />
+      <item param="addressflag" required="true" required-message="Address flag is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="relation" required="true" required-message="Relation name is required" />
+      <item param="fathername" required="true" required-message="Father name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="permanentdoorno" required="false" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent pincode is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal district is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal pincode is required" />
+      <item param="stateid" required="true" required-message="State id is required" />
+      <item param="emailid" required="true" required-message="Email id is required" />
+      <item param="phoneno" required="false" required-message="Phone number id is required" />
+      <item param="remarks" required="false" required-message="Remark is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="issuedcastecertificateinpast" required="true" required-message="Issued Caste Certificate In Past is required" />
+      <item param="casteclaimed" required="true" required-message="Caste Claimed is required" />
+      <item param="castecategory" required="true" required-message="Caste Category is required" />
+      <item param="educationcertificatecontainscaste" required="true" required-message="Education Certificate Contains Caste is required" />
+      <item param="castecategory" required="true" required-message="Caste Category is required" />
+      <item param="religion" required="true" required-message="Religion is required" />
+      <item param="purposeofcastecertificate" required="true" required-message="Purpose of Caste Certificate is required" />
+      <item param="familyincome" required="true" required-message="Family Income is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+      <item param="docproperty" required="false" required-message="Document Property is required" />
+      <item param="docitreturns" required="false" required-message="Document IT Returns is required" />
+    </getobctransactionno>
+    <getobccertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getobccertificatepdf>
+    <populateoccupation>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+    </populateoccupation>
+    <populatedeathreason>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+    </populatedeathreason>
+    <populatefmservicetypes>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatefmservicetypes>
+    <populatereasonforcertificate>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+    </populatereasonforcertificate>
+    <getfmtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="addressflag" required="true" required-message="Address flag is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="relationname" required="true" required-message="Relation Name is required" />
+      <item param="relation" required="true" required-message="Relation name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="permanentdoorno" required="false" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent pincode is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal door no is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal district is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal pincode is required" />
+      <item param="stateid" required="true" required-message="State id is required" />
+      <item param="emailid" required="false" required-message="Email id is required" />
+      <item param="remarks" required="false" required-message="Remark is required" />
+      <item param="rationcardno" required="false" required-message="Ration card no is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="deceasedname" required="true" required-message="Deceased Name is required" />
+      <item param="deceasedfname" required="true" required-message="Deceased F Name is required" />
+      <item param="dateofdeath" required="true" required-message="Date of Death is required" />
+      <item param="reasonfordeath" required="true" required-message="Reason for Death is required" />
+      <item param="occupation" required="true" required-message="Occupation is required" />
+      <item param="reasonforcertificate" required="true" required-message="Reason for Certificate is required" />
+      <item param="deathplace" required="true" required-message="Death Place is required" />
+      <item param="gridfamilymemberdetails" required="true" required-message="Grid Family Member Details is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+      <item param="docdeathproof" required="false" required-message="Document Death Proof is required" />
+    </getfmtransactionno>
+    <getfmbcopysurveynumbers>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+      <item param="villageid" required="true" required-message="Village id is required" />
+    </getfmbcopysurveynumbers>
+    <getfmbcopydetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+      <item param="villageid" required="true" required-message="Village id is required" />
+      <item param="surveyno" required="true" required-message="Survey No is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </getfmbcopydetails>
+    <fmbcopygettransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="true" required-message="Application name is required" />
+      <item param="fmbdistrict" required="true" required-message="FMB district is required" />
+      <item param="fmbmandal" required="true" required-message="FMB Mandal is required" />
+      <item param="fmbvillage" required="true" required-message="FMB Village is required" />
+      <item param="fmbsurveyno" required="true" required-message="FMB Survey No is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="fathername" required="true" required-message="Father name is required" />
+      <item param="permanentdoorno" required="true" required-message="Permanent door no is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent district is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent village is required" />
+      <item param="permanentpincode" required="true" required-message="Permanent pincode is required" />
+      <item param="emailid" required="false" required-message="Email id is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+    </fmbcopygettransactionno>
+    <getfmbcopycertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+    </getfmbcopycertificatepdf>
+    <populaterelationship>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populaterelationship>
+
+    <populatetemples>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+    </populatetemples>
+    <populatesevas>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple ID is required" />
+    </populatesevas>
+    <populatebatches>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple ID is required" />
+      <item param="sevaid" required="true" required-message="Seva ID is required" />
+    </populatebatches>
+    <populateproofdocuments>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populateproofdocuments>
+    <getsevadetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple ID is required" />
+      <item param="sevaid" required="true" required-message="Seva ID is required" />
+      <item param="batchid" required="true" required-message="Batch ID is required" />
+    </getsevadetails>
+    <getsevabookingtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="sevaid" required="true" required-message="Seva Id is required" />
+      <item param="batchid" required="true" required-message="Batch Id is required" />
+      <item param="sevabookingdate" required="true" required-message="Seva Booking Date is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="false" required-message="Application name is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="devoteename" required="true" required-message="Devotee Name is required" />
+      <item param="nakshatram" required="false" required-message="Nakshatram is required" />
+      <item param="gothram" required="false" required-message="Gothram is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="age" required="false" required-message="Age is required" />
+      <item param="houseno" required="false" required-message="House No is required" />
+      <item param="location" required="false" required-message="Location is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="countryid" required="true" required-message="Country Id is required" />
+      <item param="stateid" required="true" required-message="State Id is required" />
+      <item param="district" required="true" required-message="District is required" />
+      <item param="Mandal" required="true" required-message="Mandal is required" />
+      <item param="Village" required="true" required-message="Village is required" />
+      <item param="statename" required="true" dependon="stateid" dependonvalue="[99]" required-message="State Name is required" />
+      <item param="districtname" required="true" dependon="stateid" dependonvalue="[99]" required-message="District Name is required" />
+      <item param="mandalname" required="true" dependon="stateid" dependonvalue="[99]" required-message="Mandal Name is required" />
+      <item param="villagename" required="true" dependon="stateid" dependonvalue="[99]" required-message="Village Name is required" />
+      <item param="relationid" required="true" required-message="State Name is required" />
+      <item param="sevaamount" required="true"  required-message="Seva Amount is required" />
+      <item param="usercharges" required="true" required-message="User charges is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="proofdocumentid" required="true" required-message="Proof of Document ID is required" />
+      <item param="proofdocumentnumber" required="true" required-message="Proof of Document Number is required" />
+      <item param="proofdocumentname" required="true" required-message="Proof of Document Name is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+      <item param="docphoto" required="false" required-message="Document Photo is required" />
+    </getsevabookingtransactionno>
+    <getslnsevadetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple ID is required" />
+      <item param="sevaid" required="true" required-message="Seva ID is required" />
+      <item param="batchid" required="true" required-message="Batch ID is required" />
+    </getslnsevadetails>
+    <getslnsdsevabookingtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="sevaid" required="true" required-message="Seva Id is required" />
+      <item param="batchid" required="true" required-message="Batch Id is required" />
+      <item param="sevabookingdate" required="true" required-message="Seva Booking Date is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="false" required-message="Application name is required" />
+      <item param="deliverytype" required="true" required-message="Delivery type is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="devoteename" required="true" required-message="Devotee Name is required" />
+      <item param="nakshatram" required="false" required-message="Nakshatram is required" />
+      <item param="gothram" required="false" required-message="Gothram is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="age" required="false" required-message="Age is required" />
+      <item param="houseno" required="false" required-message="House No is required" />
+      <item param="location" required="false" required-message="Location is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="countryid" required="true" required-message="Country Id is required" />
+      <item param="stateid" required="true" required-message="State Id is required" />
+      <item param="district" required="true" required-message="District is required" />
+      <item param="Mandal" required="true" required-message="Mandal is required" />
+      <item param="Village" required="true" required-message="Village is required" />
+      <item param="pincode" required="true" required-message="Pincode is required" />
+      <item param="statename" required="true" dependon="stateid" dependonvalue="[99]" required-message="State Name is required" />
+      <item param="districtname" required="true" dependon="stateid" dependonvalue="[99]" required-message="District Name is required" />
+      <item param="mandalname" required="true" dependon="stateid" dependonvalue="[99]" required-message="Mandal Name is required" />
+      <item param="villagename" required="true" dependon="stateid" dependonvalue="[99]" required-message="Village Name is required" />
+      <item param="relationid" required="true" required-message="State Name is required" />
+      <item param="sevaamount" required="true"  required-message="Seva Amount is required" />
+      <item param="usercharges" required="true" required-message="User charges is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="proofdocumentid" required="true" required-message="Proof of Document ID is required" />
+      <item param="proofdocumentnumber" required="true" required-message="Proof of Document Number is required" />
+      <item param="proofdocumentname" required="true" required-message="Proof of Document Name is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+    </getslnsdsevabookingtransactionno>
+
+    <populateroomtype>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populateroomtype>
+    <populatetemplerooms>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="roomtypeid" required="true" required-message="Room Type Id is required" />
+    </populatetemplerooms>
+    <getavailableroomsdate>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </getavailableroomsdate>
+    <getendowmentroomamount>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="roomid" required="true" required-message="Room Id is required" />
+    </getendowmentroomamount>
+    <getroombookingtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="roomid" required="true" required-message="Room Id is required" />
+      <item param="roomtype" required="true" required-message="Room Type is required" />
+      <item param="roombookingdate" required="true" required-message="Room Booking Date is required" />
+      <item param="applicationno" required="true" required-message="Application no is required" />
+      <item param="applicantname" required="false" required-message="Application name is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar no is required" />
+      <item param="devoteename" required="true" required-message="Devotee Name is required" />
+      <item param="nakshatram" required="false" required-message="Nakshatram is required" />
+      <item param="gothram" required="false" required-message="Gothram is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="age" required="false" required-message="Age is required" />
+      <item param="houseno" required="false" required-message="House No is required" />
+      <item param="location" required="false" required-message="Location is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="countryid" required="true" required-message="Country Id is required" />
+      <item param="stateid" required="true" required-message="State Id is required" />
+      <item param="district" required="true" required-message="District is required" />
+      <item param="mandal" required="true" required-message="Mandal is required" />
+      <item param="village" required="true" required-message="Village is required" />
+      <item param="pincode" required="true" required-message="Pincode is required" />
+      <item param="statename" required="true" dependon="stateid" dependonvalue="[99]" required-message="State Name is required" />
+      <item param="districtname" required="true" dependon="stateid" dependonvalue="[99]" required-message="District Name is required" />
+      <item param="mandalname" required="true" dependon="stateid" dependonvalue="[99]" required-message="Mandal Name is required" />
+      <item param="villagename" required="true" dependon="stateid" dependonvalue="[99]" required-message="Village Name is required" />
+      <item param="applicantrelation" required="true" required-message="Applicant Relation is required" />
+      <item param="roomamount" required="true"  required-message="Room Amount is required" />
+      <item param="usercharges" required="true" required-message="User charges is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="proofdocumentid" required="true" required-message="Proof of Document ID is required" />
+      <item param="proofdocumentnumber" required="true" required-message="Proof of Document Number is required" />
+      <item param="proofdocumentname" required="true" required-message="Proof of Document Name is required" />
+      <item param="docapplicationform" required="false" required-message="Document application form is required" />
+      <item param="docidproof" required="false" required-message="Document id proof is required" />
+    </getroombookingtransactionno>
+    <getavailableroomsdate>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="checkindate" required="true" pattern="^([0-9]{4}/(0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01]))$" required-message="Checkin Date is required" invalid-message="Invalid date, Please enter yyyy/mm/dd" />
+      <item param="templeid" required="true" required-message="Temple Id is required" />
+      <item param="roomid" required="true" required-message="Room Id is required" />
+    </getavailableroomsdate>
+
+    <populaterordetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="mandalid" required="true" required-message="Mandal Id is required" />
+      <item param="villageid" required="true" required-message="Village Id is required" />
+      <item param="kathano" required="true" required-message="Katha No is required" />
+    </populaterordetails>
+    <getrortransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="addressflag" required="true" required-message="Address Flag is required" />
+      <item param="docdistrictid" required="true" required-message="Doc District Id is required" />
+      <item param="docmandalid" required="true" required-message="Doc Mandal Id is required" />
+      <item param="docvillageid" required="true" required-message="Doc Village Id is required" />
+      <item param="dockhatano" required="true" required-message="Doc Khata No is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="applicantfathername" required="true" required-message="Applicant Father Name is required" />
+      <item param="applicantdoorno" required="false" required-message="Applicant Door No is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="applicationstreetname" required="false" required-message="Application Street name is required" />
+      <item param="applicantstate" required="false" required-message="Applicant State is required" />
+      <item param="applicantdistrict" required="false" required-message="Applicant District is required" />
+      <item param="applicantmandal" required="false" required-message="Applicant Mandal is required" />
+      <item param="applicantvillage" required="false" required-message="Applicant Village is required" />
+      <item param="pincode" required="false" required-message="PinCode is required" />
+      <item param="deliverytype" required="false" required-message="Delivery Type is required" />
+      <item param="servicecharge" required="false" required-message="Service Charge is required" />
+      <item param="postalcharge" required="false" required-message="Postal Charges is required" />
+      <item param="usercharge" required="false" required-message="User charge is required" />
+      <item param="totalamount" required="false" required-message="Total amount is required" />
+      <item param="postalstate" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal State is required" />
+      <item param="postaldistrct" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Distrct is required" />
+      <item param="postalmandal" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Mandal is required" />
+      <item param="postalvillage" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Pincode is required" />
+      <item param="postallocation" required="false" required-message="Postal Location is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Door No is required" />
+      <item param="rationcardno" required="false" required-message="Ration card No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="createdby" required="true" required-message="Created By is required" />
+    </getrortransactionno>
+    <getrorcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </getrorcertificatepdf>
+
+    <populatelicencetype>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatelicencetype>
+    <getpetroleumnoctransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="addressflag" required="true" required-message="Address Flag is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="applicantcalling" required="true" required-message="Applicant Calling is required" />
+      <item param="fatherorhusbandname" required="true" required-message="Father/Husband Name is required" />
+      <item param="aadhaarno" required="true" required-message="Aadhaar No is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent District is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent Mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent Village is required" />
+      <item param="permanentlocality" required="true" required-message="Permanent Locality is required" />
+      <item param="permanentdoorno" required="true" required-message="Permanent Door No is required" />
+      <item param="permanentpincode" required="true" required-message="Permanent Pincode is required" />
+      <item param="docdistrict" required="true" required-message="Doc District is required" />
+      <item param="docmandal" required="true" required-message="Doc Mandal is required" />
+      <item param="docvillage" required="true" required-message="Doc Village is required" />
+      <item param="docpincode" required="true" required-message="DOC Pincode is required" />
+      <item param="nearestpolicestation" required="true" required-message="Nearest Police Station is required" />
+      <item param="nearestrailwaystation" required="true" required-message="Nearest Railway Station is required" />
+      <item param="surveynumber" required="true" required-message="Survey Number is required" />
+      <item param="licencenumber" required="true" required-message="Licence Number is required" />
+      <item param="licencetype" required="true" required-message="Licence Type is required" />
+      <item param="nooflicence" required="true" required-message="No Of Licence is required" />
+      <item param="impaibquantityinlitres" required="true" required-message="ImpAIB Quantity In litres is required" />
+      <item param="impanib" required="true" required-message="ImpANIB is required" />
+      <item param="impatotal" required="true" required-message="ImpATotal is required" />
+      <item param="impbib" required="true" required-message="ImpBIB is required" />
+      <item param="impbnib" required="true" required-message="ImpBNIB is required" />
+      <item param="impbtotal" required="true" required-message="ImpBTotal is required" />
+      <item param="impcib" required="true" required-message="ImpCIB is required" />
+      <item param="impcnib" required="true" required-message="ImpCNIB is required" />
+      <item param="impctotal" required="true" required-message="ImpCTotal is required" />
+      <item param="imptotal" required="true" required-message="ImpTotal is required" />
+      <item param="storedaibquantityinlitres" required="true" required-message="Stored AIB Quantity In litres is required" />
+      <item param="storedanib" required="true" required-message="Stored ANIB is required" />
+      <item param="storedatotal" required="true" required-message="Stored ATotal is required" />
+      <item param="storedbib" required="true" required-message="Stored BIB is required" />
+      <item param="storedbnib" required="true" required-message="Stored BNIB is required" />
+      <item param="storedbtotal" required="true" required-message="Stored BTotal is required" />
+      <item param="storedcib" required="true" required-message="Stored CIB is required" />
+      <item param="storedcnib" required="true" required-message="Stored CNIB is required" />
+      <item param="storedctotal" required="true" required-message="Stored CTotal is required" />
+      <item param="storedtotal" required="true" required-message="Stored Total is required" />
+      <item param="infname" required="true" required-message="InfName is required" />
+      <item param="infrelation" required="true" required-message="InfRelation is required" />
+      <item param="infemail" required="true" required-message="InfEmail is required" />
+      <item param="infmobileno" required="true" required-message="InfMobileNo is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="stateid" required="true" dependon="deliverytype" dependonvalue="[02],[03]" required-message="State Id is required" />
+      <item param="postaldistrict" required="true" dependon="deliverytype" dependonvalue="[02],[03]" required-message="Postal District is required" />
+      <item param="postalmandal" required="true" dependon="deliverytype" dependonvalue="[02],[03]" required-message="Postal Mandal is required" />
+      <item param="postalvillage" required="true" dependon="deliverytype" dependonvalue="[02],[03]" required-message="Postal Village is required" />
+      <item param="PostalLocality" required="true" required-message="Postal Locality is required" />
+      <item param="postaldoorno" required="false" required-message="Postal Door No is required" />
+      <item param="postalpincode" required="false" required-message="Postal Pincode is required" />
+      <item param="postalmobile" required="true" dependon="deliverytype" dependonvalue="[02],[03]" required-message="Postal MobileNo is required" />
+      <item param="Phone" required="false" required-message="Postal Phone is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="true" required-message="Doc Application form is required" />
+      <item param="docsiteplan" required="true" required-message="Doc Site Plan is required" />
+      <item param="doccopyofpassbookortitledeedorsaledeed" required="true" required-message="Doc Copy of Passbook/title deed/sale deed is required" />
+      <item param="docleaseagreement" required="true" required-message="Doc Lease Agreement is required" />
+      <item param="docletterofoilcompany" required="true" required-message="Doc Letter of oil company is required" />
+      <item param="docextractpahani" required="true" required-message="Doc Extract Pahani is required" />
+    </getpetroleumnoctransactionno>
+    <getpetroleumproductscertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </getpetroleumproductscertificatepdf>
+
+    <getinamlandstransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="aadharno" required="false" required-message="Aadhar No is required" />
+      <item param="fathername" required="true" required-message="Father Name is required" />
+      <item param="state" required="true" required-message="State is required" />
+      <item param="applicantdistrict" required="true" required-message="Applicant District is required" />
+      <item param="applicantmandal" required="true" required-message="Applicant Mandal is required" />
+      <item param="applicantvillage" required="true" required-message="Applicant Village is required" />
+      <item param="applicantdoorno" required="false" required-message="Applicant Door No is required" />
+      <item param="applicantlocality" required="false" required-message="Applicant Locality is required" />
+      <item param="applicantpincode" required="false" required-message="Applicant Pincode is required" />
+      <item param="applicantinamdaryesno" required="true" required-message="Applicant Inamdar Yes No is required" />
+      <item param="relationshipinamdar" required="true" required-message="RelationShip Inamdar is required" />
+      <item param="natureofinterests" required="true" required-message="Nature Of Interests is required" />
+      <item param="revenueamountpaid" required="true" required-message="Revenue Amount Paid is required" />
+      <item param="landdistrict" required="true" required-message="Land District is required" />
+      <item param="landmandal" required="true" required-message="Land Mandal is required" />
+      <item param="gridinamlandsdetails" required="true" required-message="Grid INAM Lands Details is required" />
+      <item param="informantname" required="true" required-message="Informant Name is required" />
+      <item param="relationshipapp" required="true" required-message="RelationshipApp is required" />
+      <item param="informantemail" required="true" required-message="Informant Email is required" />
+      <item param="informantmobileno" required="true" required-message="Informant MobileNo is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="challanamount" required="true" required-message="Challan Amount is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Doc Application form is required" />
+      <item param="doc1954_1955kasarapahani" required="true" required-message="Doc1954_1955KasaraPahani is required" />
+      <item param="doc73_74latestpahanicopies" required="true" required-message="Doc73_74LatestPahaniCopies is required" />
+      <item param="docfamilytree" required="false" required-message="Doc Family Tree is required" />
+      <item param="docrelationshipwithinamdhar" required="false" required-message="Doc Relationship With Inamdhar is required" />
+    </getinamlandstransactionno>
+    <getinamlandscertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </getinamlandscertificatepdf>
+
+    <ghmcbirthordeathrecord>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="dateofbirth" required="true" pattern="^((0?[1-9]|[12][0-9]|3[01])-([A-Za-z]{3})-[0-9]{4})$" required-message="Date Of Birth is required" invalid-message="Invalid Date Of Birth. Please enter in format 01-JAN-2001" />
+      <item param="registrationno" required="false" required-message="Registration No is required" />
+      <item param="circleno" required="true" required-message="Circle No is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="mothername" required="false" required-message="Mother Name is required" />
+      <item param="fatherhusbandname" required="true" required-message="Father/Husband Name is required" />
+      <item param="deceasedname" required="false" required-message="Deceased Name is required" />
+    </ghmcbirthordeathrecord>
+    <ghmcbirthdeathdatabyackno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="ackno" required="true" required-message="Ack No is required" />
+    </ghmcbirthdeathdatabyackno>
+    <getghmcservicecharges>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="noofcopies" required="true" required-message="No Of Copies Type is required" />
+    </getghmcservicecharges>
+    <getghmcbirthdeathtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="Service" required="true" required-message=" is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="acknowledgementno" required="true" required-message="Acknowledgement No is required" />
+      <item param="registrationnumber" required="false" required-message="Registration Number is required" />
+      <item param="eventname" required="false" required-message="Event Name is required" />
+      <item param="eventdate" required="false" required-message="Event Date is required" />
+      <item param="gender" required="false" required-message="Gender is required" />
+      <item param="circle" required="false" required-message="Circle is required" />
+      <item param="ward" required="false" required-message="Ward is required" />
+      <item param="locality" required="false" required-message="Locality is required" />
+      <item param="fatherhusbandname" required="false" required-message="Father/Husband name is required" />
+      <item param="mothername" required="false" required-message="MotherName is required" />
+      <item param="residenceaddress" required="false" required-message="Residence Address is required" />
+      <item param="permanentaddress" required="false" required-message="Permanent Address is required" />
+      <item param="regdate" required="false" required-message="Reg Date is required" />
+      <item param="deathcause" required="false" required-message="Death Cause is required" />
+      <item param="placeofevent" required="false" required-message="Place Of Event is required" />
+      <item param="remarks" required="false" required-message="Remarks is required" />
+      <item param="informantname" required="true" required-message="Informant Name is required" />
+      <item param="informantrelation" required="true" required-message="Informant Relation is required" />
+      <item param="informantaddress" required="true" required-message="Informant Address is required" />
+      <item param="informantphoneno" required="true" required-message="Informant Phone No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="rationcardno" required="false" required-message="RationCard No is required" />
+      <item param="informantemailid" required="false" required-message="Informant EmailId is required" />
+      <item param="informantremarks" required="false" required-message="Informant Remarks is required" />
+      <item param="informantpincode" required="false" required-message="Informant PinCode is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="numberofcopies" required="true" required-message="Number Of Copies is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="postaldoorno" required="false" required-message="postal DoorNo is required" />
+      <item param="postaldistrict" required="false" required-message="Postal District is required" />
+      <item param="postalmandalid" required="false" required-message="Postal Mandal is required" />
+      <item param="postalvillageid" required="false" required-message="Postal Village is required" />
+      <item param="postalpincode" required="false" required-message="Postal PinCode is required" />
+      <item param="docapplicationform" required="false" required-message="Doc Application form is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+    </getghmcbirthdeathtransactionno>
+    <getghmcbdcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+    </getghmcbdcertificatepdf>
+
+    <ghmcsearchbirthrecord>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="dateofbirth" required="true" pattern="^((0?[1-9]|[12][0-9]|3[01])-([A-Za-z]{3})-[0-9]{4})$" required-message="Date Of Birth is required" invalid-message="Invalid Date Of Birth. Please enter in format 01-JAN-2001" />
+      <item param="registrationno" required="false" required-message="Registration No is required" />
+      <item param="circleno" required="true" required-message="Circle No is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="mothername" required="false" required-message="Mother Name is required" />
+      <item param="fatherhusbandname" required="false" required-message="Father Name is required" />
+    </ghmcsearchbirthrecord>
+    <ghmcsearchdeathrecord>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="dateofbirth" required="true" pattern="^((0?[1-9]|[12][0-9]|3[01])-([A-Za-z]{3})-[0-9]{4})$" required-message="Date Of Birth is required" invalid-message="Invalid Date Of Birth. Please enter in format 01-JAN-2001" />
+      <item param="registrationno" required="false" required-message="Registration No is required" />
+      <item param="circleno" required="true" required-message="Circle No is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="deceasedname" required="false" required-message="Deceased Name is required" />
+      <item param="fatherhusbandname" required="false" required-message="Father Name is required" />
+    </ghmcsearchdeathrecord>
+    <ghmcacninclusionbyackno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="ackno" required="true" required-message="Ack No is required" />
+    </ghmcacninclusionbyackno>
+    <getghmccorrectionbirthdeathtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="documentrefnumbers" required="false" required-message="Document Ref Numbers is required" />
+      <item param="acknowledgementno" required="true" required-message="Acknowledgement No is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="registrationnumber" required="false" required-message="Registration Number is required" />
+      <item param="gender" required="false" required-message="Gender is required" />
+      <item param="changedgender" required="false" required-message="Changed Gender is required" />
+      <item param="eventname" required="false" required-message="Event Name is required" />
+      <item param="changedeventname" required="true" required-message="Changed Event Name is required" />
+      <item param="fathername" required="false" required-message="Father Name is required" />
+      <item param="changedfathername" required="false" required-message="Changed Father Name is required" />
+      <item param="mothername" required="false" required-message="Mother Name is required" />
+      <item param="changedmothername" required="false" required-message="Changed Mother Name is required" />
+      <item param="dateofevent" required="false" required-message="Date Of Event is required" />
+      <item param="changeddateofevent" required="false" required-message="Changed Date Of Event is required" />
+      <item param="placeofevent" required="false" required-message="Place Of Event is required" />
+      <item param="changedplaceofevent" required="false" required-message="Changed Place Of Event is required" />
+      <item param="circle" required="false" required-message="Circle is required" />
+      <item param="changedcircle" required="false" required-message="Changed circle is required" />
+      <item param="wardno" required="false" required-message="Ward No is required" />
+      <item param="locality" required="true" required-message="Locality is required" />
+      <item param="residenceaddress" required="false" required-message="Residence Address is required" />
+      <item param="changedresidenceaddress" required="false" required-message="Changed Residence Address is required" />
+      <item param="reasonfordeath" required="false" required-message="Reason For Death is required" />
+      <item param="changedreasonfordeath" required="false" required-message="Changed Reason For Death is required" />
+      <item param="permanentaddress" required="false" required-message="Permanent Address is required" />
+      <item param="remarks" required="false" required-message="Remarks is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="relation" required="true" required-message="Relation is required" />
+      <item param="rationcardno" required="false" required-message="Ration Card No is required" />
+      <item param="aadhaarcardno" required="false" required-message="Aadhaar Card No is required" />
+      <item param="applicantaddress" required="true" required-message="Applicant Address is required" />
+      <item param="pincode" required="false" required-message="PinCode is required" />
+      <item param="phoneno" required="true" required-message="Phone No is required" />
+      <item param="postaldoorno" required="false" required-message="Postal DoorNo is required" />
+      <item param="postallocality" required="false" required-message="Postal Locality is required" />
+      <item param="postaldistrict" required="false" required-message="Postal District is required" />
+      <item param="postalmandalid" required="false" required-message="Postal MandalId is required" />
+      <item param="postalvillageid" required="false" required-message="Postal VillageId is required" />
+      <item param="postalpincode" required="false" required-message="Postal PinCode is required" />
+      <item param="postalmobileno" required="false" required-message="Postal MobileNo is required" />
+      <item param="postalemailid" required="false" required-message="Postal EmailId is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="numberofcopies" required="true" required-message="Number Of Copies is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="createdby" required="true" required-message="Created By is required" />
+      <item param="physicaldocument" required="false" required-message="Physical Document is required" />
+      <item param="certificate" required="false" required-message="Certificate is required" />
+      <item param="parentsdeclaration" required="false" required-message="Parents Declaration is required" />
+      <item param="notaryaffidavit" required="false" required-message="Notary Affidavit is required" />
+      <item param="availabledocuments" required="false" required-message="Available Documents is required" />
+      <item param="hospitalletter" required="false" required-message="Hospital Letter is required" />
+      <item param="medicolegalcase" required="false" required-message="Medico Legal Case is required" />
+    </getghmccorrectionbirthdeathtransactionno>
+
+    <getghmcchildnameinclusiontransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="acknowledgementno" required="true" required-message="Acknowledgement No is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="registrationnumber" required="true" required-message="Registration Number is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="actualchildname" required="true" required-message="Actual Child Name is required" />
+      <item param="changedchildname" required="true" required-message="Changed Child Name is required" />
+      <item param="fathername" required="true" required-message="Father Name is required" />
+      <item param="mothername" required="true" required-message="Mother Name is required" />
+      <item param="dateofbirth" required="true" required-message="Date Of Birth is required" />
+      <item param="circle" required="true" required-message="Circle is required" />
+      <item param="wardno" required="true" required-message="Ward No is required" />
+      <item param="locality" required="true" required-message="Locality is required" />
+      <item param="placeofevent" required="true" required-message="Place Of Event is required" />
+      <item param="applicantaddress" required="true" required-message="Applicant Address is required" />
+      <item param="permanentaddress" required="true" required-message="Permanent Address is required" />
+      <item param="remarks" required="true" required-message="Remarks is required" />
+      <item param="informantname" required="true" required-message="Informant Name is required" />
+      <item param="informantrelation" required="true" required-message="Informant Relation is required" />
+      <item param="rationcardno" required="false" required-message="RationCard No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="informantaddress" required="true" required-message="Informant Address is required" />
+      <item param="informantpincode" required="false" required-message="Informant PinCode is required" />
+      <item param="informantphoneno" required="true" required-message="Informant PhoneNo is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="postaldoorno" required="false" required-message="Postal DoorNo is required" />
+      <item param="postallocality" required="false" required-message="Postal Locality is required" />
+      <item param="postaldistrict" required="false" required-message="Postal District is required" />
+      <item param="postalmandalid" required="false" required-message="Postal MandalId is required" />
+      <item param="postalvillageid" required="false" required-message="Postal VillageId is required" />
+      <item param="postalpincode" required="false" required-message="Postal PinCode is required" />
+      <item param="postalmobileno" required="false" required-message="Postal MobileNo is required" />
+      <item param="postalemailid" required="false" required-message="Postal EmailId is required" />
+      <item param="numberofcopies" required="true" required-message="Number Of Copies is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="createdby" required="true" required-message="CreatedBy is required" />
+      <item param="docapplicationform" required="false" required-message="Doc Application form is required" />
+      <item param="docaffidavit" required="true" required-message="Doc Affidavit is required" />
+    </getghmcchildnameinclusiontransactionno>
+
+    <getghmcnabdtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="applicantfathername" required="true" required-message="Applicant Father Name is required" />
+      <item param="age" required="false" required-message="Age is required" />
+      <item param="address" required="true" required-message="Address is required" />
+      <item param="phoneno" required="true" required-message="Phone No is required" />
+      <item param="eventrelation" required="true" required-message="Event Relation is required" />
+      <item param="rationcardnumber" required="false" required-message="RationCard Number is required" />
+      <item param="emailid" required="false" required-message="EmailID is required" />
+      <item param="eventname" required="true" required-message="Event Name is required" />
+      <item param="dateofevent" required="true" required-message="Date of Event is required" />
+      <item param="placeofevent" required="true" required-message="Place of Event is required" />
+      <item param="deathcause" required="false" required-message="Death Cause is required" />
+      <item param="residenceaddress" required="false" required-message="Residence Address is required" />
+      <item param="eventgender" required="true" required-message="Event Gender is required" />
+      <item param="mothername" required="true" required-message="Mother Name is required" />
+      <item param="fathername" required="true" required-message="Father Name is required" />
+      <item param="circle" required="true" required-message="Circle is required" />
+      <item param="ward" required="true" required-message="Ward is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="postaldoorno" required="false" required-message="Postal DoorNo is required" />
+      <item param="postaldistrict" required="false" required-message="Postal District is required" />
+      <item param="postalmandal" required="false" required-message="Postal Mandal is required" />
+      <item param="postalvillage" required="false" required-message="Postal Village is required" />
+      <item param="postalpincode" required="false" required-message="Postal Pincode is required" />
+      <item param="numberofcopies" required="true" required-message="Number Of Copies is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="createdby" required="true" required-message="CreatedBy is required" />
+      <item param="physicaldocument" required="true" required-message="Physical Document is required" />
+      <item param="rationotherresidenceproof" required="false" required-message="Ration Other Residence Proof is required" />
+      <item param="schoolbonafied" required="false" required-message="School Bonafied is required" />
+      <item param="sscmark" required="false" required-message="SSC Mark is required" />
+      <item param="deathnotarized" required="false" required-message="Deathnotarized is required" />
+      <item param="otherevidence" required="false" required-message="Other evidence is required" />
+      <item param="affidavit" required="true" required-message="Affidavit is required" />
+      <item param="otherdoc" required="false" required-message="Other Doc is required" />
+      <item param="medicallegal" required="false" required-message="Medical legal is required" />
+    </getghmcnabdtransactionno>
+    <getghmcnabdcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+    </getghmcnabdcertificatepdf>
+
+    <populatemutationtype>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatemutationtype>
+    <populatemutationcaste>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatemutationcaste>
+    <populatedivision>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="mandalid" required="true" required-message="Mandal id is required" />
+      <item param="districtid" required="true" required-message="District id is required" />
+    </populatedivision>
+    <getmutationapptransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="addressflag" required="true" required-message="Address Flag is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="buyername" required="true" required-message="Buyer Name is required" />
+      <item param="fatherorhusbandname" required="true" required-message="Father/Husband Name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="dateofbirth" required="false" required-message="Date Of Birth is required" />
+      <item param="buyerkathano" required="false" required-message="Buyer Katha No is required" />
+      <item param="permanentstate" required="true" required-message="Permanent State is required" />
+      <item param="permanentdoorno" required="false" required-message="Permanent DoorNo is required" />
+      <item param="permanentlocality" required="false" required-message="Permanent Locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent District is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent Mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent Village is required" />
+      <item param="permanentpincode" required="false" required-message="Permanent PinCode is required" />
+      <item param="postalstate" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal State is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal DoorNo is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Locality is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal District is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal PinCode is required" />
+      <item param="phone" required="false" required-message="Phone is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="remarks" required="false" required-message="Remarks is required" />
+      <item param="rationcardno" required="false" required-message="RationCard No is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="docdistrict" required="true" required-message="Doc district is required" />
+      <item param="docmandal" required="true" required-message="Doc mandal is required" />
+      <item param="docvillage" required="true" required-message="Doc village is required" />
+      <item param="division" required="true" required-message="Division is required" />
+      <item param="caste" required="true" required-message="Caste is required" />
+      <item param="mutationtype" required="true" required-message="Mutation Type is required" />
+      <item param="gridmutationdetails" required="true" required-message="Grid Mutation Details is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="false" required-message="Doc Application form is required" />
+      <item param="docregistereddocumentcopies" required="true" required-message="Doc kRegistered Document Copies is required" />
+      <item param="docoldpattadarpassbook" required="true" required-message="Doc Old Pattadar Passbook is required" />
+      <item param="doctaxreceipts" required="false" required-message="Doc Tax Receipts is required" />
+      <item param="docpassportsizephoto" required="true" required-message="Doc Passport Size photo is required" />
+      <item param="docsignature" required="true" required-message="Doc Signature is required" />
+    </getmutationapptransactionno>
+
+    <populatecndobservicetype>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populatecndobservicetype>
+    <populatecncastes>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="whom" required="true" required-message="Whom is required" />
+    </populatecncastes>
+    <populatecnsubtribe>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="whom" required="true" required-message="Whom is required" />
+      <item param="caste" required="true" required-message="Caste is required" />
+    </populatecnsubtribe>
+    <getservicechargesonservicetype>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+    </getservicechargesonservicetype>
+    <getcndobtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="documentrefnumbers" required="true" required-message="Document Ref Numbers is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="aadhaarno" required="false" required-message="Aadhaar No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="fatherorhusbandname" required="true" required-message="Father/Husband Name is required" />
+      <item param="mothername" required="true" required-message="Mother Name is required" />
+      <item param="dateofbirth" required="false" required-message="DOB is required" />
+      <item param="age" required="true" required-message="Age is required" />
+      <item param="presentdoorno" required="true" required-message="Present Door No is required" />
+      <item param="presentlocality" required="true" required-message="Present Locality is required" />
+      <item param="presentdistrict" required="true" required-message="Present District is required" />
+      <item param="presentmandal" required="true" required-message="Present Mandal is required" />
+      <item param="presentvillage" required="true" required-message="Present Village is required" />
+      <item param="presentpincode" required="true" required-message="Present PinCode is required" />
+      <item param="permanentdoorno" required="true" required-message="Permanent DoorNo is required" />
+      <item param="permanentlocality" required="true" required-message="Permanent Locality is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent District is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent Mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent Village is required" />
+      <item param="permanentpincode" required="true" required-message="Permanent PinCode is required" />
+      <item param="residencedoorno" required="true" required-message="Residence DoorNo is required" />
+      <item param="residencetlocality" required="true" required-message="Residencet Locality is required" />
+      <item param="residencedistrict" required="true" required-message="Residence District is required" />
+      <item param="residencemandal" required="true" required-message="Residence Mandal is required" />
+      <item param="residencevillage" required="true" required-message="Residence Village is required" />
+      <item param="residencetpincode" required="true" required-message="Residencet PinCode is required" />
+      <item param="pobdoorno" required="true" required-message="Place of birth DoorNo is required" />
+      <item param="poblocality" required="true" required-message="POB Locality is required" />
+      <item param="pobstate" required="true" required-message="POB State is required" />
+      <item param="pobdistrict" required="true" required-message="POB District is required" />
+      <item param="pobmandal" required="true" required-message="POB Mandal is required" />
+      <item param="pobvillage" required="true" required-message="POB Village is required" />
+      <item param="pobpincode" required="true" required-message="POB PinCode is required" />
+      <item param="communitycertificatepastyesno" required="true" required-message="Community Certificate Past Yes No is required" />
+      <item param="applicantcommunity" required="true" required-message="Applicant Community is required" />
+      <item param="subtribeorsubgroupofapplicant" required="true" required-message="Subtribe Or Subgroup of Applicant is required" />
+      <item param="fathercommunity" required="true" required-message="Father Community is required" />
+      <item param="subtribefather" required="true" required-message="Subtribe Father is required" />
+      <item param="mothercommunity" required="true" required-message="Mother Community is required" />
+      <item param="subtribemother" required="true" required-message="Subtribe Mother is required" />
+      <item param="applicantreligion" required="false" required-message="Applicant Religion is required" />
+      <item param="fatherreligion" required="false" required-message="Father Religion is required" />
+      <item param="motherreligion" required="false" required-message="Mother Religion is required" />
+      <item param="naturalbornoradoptedbaby" required="true" required-message="Natural Born/Adopted Baby is required" />
+      <item param="householdsurveyno" required="true" required-message="Household Survey No is required" />
+      <item param="emailid" required="true" required-message="EmailId is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="true" required-message="Doc Application form is required" />
+      <item param="docidproof" required="true" required-message="Doc ID Proof is required" />
+      <item param="docdobcert" required="true" required-message="Doc DOB Cert is required" />
+      <item param="docsscmarksmemo" required="true" required-message="Doc SSC Marks Memo is required" />
+      <item param="docimmovableproperties" required="true" required-message="Doc Immovable Properties is required" />
+      <item param="docstudycert" required="true" required-message="Doc Study Cert is required" />
+    </getcndobtransactionno>
+    <getcndobcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </getcndobcertificatepdf>
+
+    <cdmaruiddetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="locationtype" required="true" required-message="Location Type is required" />
+    </cdmaruiddetails>
+    <cdmabirthdeathdetail>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="applicationno" required="true" dependon="servicetype" dependonvalue="[01]" required-message="Application No is required" />
+      <item param="regunitid" required="true" required-message="Reg Unit Id is required" />
+      <item param="regyear" required="true" required-message="Reg Year is required" />
+      <item param="regno" required="true" required-message="Reg No is required" />
+      <item param="testid" required="false" required-message="Test Id is required" />
+    </cdmabirthdeathdetail>
+    <cdmabirthdeathdetailsearch>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="regunitid" required="true" required-message="Reg Unit Id is required" />
+      <item param="regyear" required="true" required-message="Reg Year is required" />
+      <item param="regno" required="true" required-message="Reg No is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+    </cdmabirthdeathdetailsearch>
+    <cdmaservicecharges>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="rlbtype" required="true" required-message="RLB Type is required" />
+      <item param="noofcopies" required="true" required-message="No Of Copies is required" />
+    </cdmaservicecharges>
+    <cdmabdtransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="servicetype" required="true" required-message="Service Type is required" />
+      <item param="regunitid" required="true" required-message="Reg Unit Id is required" />
+      <item param="regno" required="false" required-message="Reg No is required" />
+      <item param="regyear" required="false" required-message="Reg Year is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="regdate" required="false" required-message="Reg Date is required" />
+      <item param="eventname" required="true" required-message="Event Name is required" />
+      <item param="eventsurname" required="true" required-message="EventSurName is required" />
+      <item param="dateofbirthordeath" required="true" required-message="Date of Birth Or Death is required" />
+      <item param="gender" required="true" required-message="Gender is required" />
+      <item param="fatherorhusbandname" required="true" required-message="Father/Husband Name is required" />
+      <item param="fatherorhusbandsurname" required="true" required-message="Father/Husband Sur Name is required" />
+      <item param="mothername" required="true" required-message="Mother Name is required" />
+      <item param="mothersurname" required="false" required-message="Mother Sur Name is required" />
+      <item param="birthordeathplace" required="true" required-message="Birth/Death Place is required" />
+      <item param="locationname" required="true" required-message="Location Name is required" />
+      <item param="hospitalname" required="true" required-message="Hospital Name is required" />
+      <item param="hospitaladdress1" required="true" required-message="Hospital Address1 is required" />
+      <item param="hospitaladdress2" required="true" required-message="Hospital Address2 is required" />
+      <item param="hospitaladdress3" required="true" required-message="Hospital Address3 is required" />
+      <item param="statename" required="true" required-message="State Name is required" />
+      <item param="districtname" required="true" required-message="District Name is required" />
+      <item param="pincode" required="false" required-message="Pin Code is required" />
+      <item param="informantname" required="true" required-message="Informant Name is required" />
+      <item param="informantrelation" required="true" required-message="Informant Relation is required" />
+      <item param="informantaddress1" required="true" required-message="Informant Address1 is required" />
+      <item param="informantaddress2" required="true" required-message="Informant Address2 is required" />
+      <item param="informantaddress3" required="true" required-message="Informant Address3 is required" />
+      <item param="informantphoneno" required="true" required-message="Informant PhoneNo is required" />
+      <item param="aadharcardno" required="false" required-message="Aadhaar No is required" />
+      <item param="rationcardno" required="false" required-message="Ration CardNo is required" />
+      <item param="informantemailid" required="false" required-message="Informant EmailId is required" />
+      <item param="informantremarks" required="false" required-message="Informant Remarks is required" />
+      <item param="informantpincode" required="false" required-message="Informant PinCode is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="noofcopies" required="true" required-message="No Of Copies is required" />
+      <item param="purpose" required="true" required-message="Purpose is required" />
+      <item param="postaldoorno" required="false" required-message="Postal DoorNo is required" />
+      <item param="postallocality" required="false" required-message="Postal Locality is required" />
+      <item param="postalstate" required="false" required-message="Postal State is required" />
+      <item param="postaldistrict" required="false" required-message="Postal District is required" />
+      <item param="postalmandalid" required="false" required-message="Postal MandalId is required" />
+      <item param="postalvillageid" required="false" required-message="Postal VillageId is required" />
+      <item param="postalpincode" required="false" required-message="Postal PinCode is required" />
+      <item param="rlbtype" required="true" required-message="RLB Type is required" />
+      <item param="servicecharge" required="true" required-message="Service Charge is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="stationarycharges" required="true" required-message="Stationary Charges is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+      <item param="docapplicationform" required="true" required-message="Doc Application form is required" />
+    </cdmabdtransactionno>
+    <cdmabdcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </cdmabdcertificatepdf>
+
+    <populateecdistrict>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </populateecdistrict>
+    <populatesro>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+    </populatesro>
+    <ecdocuments>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="sro1" required="true" required-message="SRO1 is required" />
+      <item param="regyear" required="true" required-message="Reg Year is required" />
+      <item param="documentno" required="true" required-message="Document No is required" />
+    </ecdocuments>
+    <ectransactionid>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="docdistrict" required="true" required-message="Doc District is required" />
+      <item param="sroid" required="true" required-message="SRO Id is required" />
+      <item param="docno" required="true" required-message="Doc No is required" />
+      <item param="docyear" required="true" required-message="Doc Year is required" />
+      <item param="fromdate" required="true" pattern="^((0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/[0-9]{4})$" required-message="From Date is required" invalid-message="Invalid date, Please enter mm/dd/yyyy" />
+      <item param="todate" required="true" pattern="^((0?[1-9]|1[0-2])/(0?[1-9]|[12][0-9]|3[01])/[0-9]{4})$" required-message="to Date is required" invalid-message="Invalid date, Please enter mm/dd/yyyy" />
+      <item param="bldgflatno" required="false" required-message="BLDG Flat No is required" />
+      <item param="bldgoldhouseno" required="false" required-message="BLDGOld House No is required" />
+      <item param="bldgaprtment" required="false" required-message="BLDG Aprtment is required" />
+      <item param="bldgward" required="true" required-message="BLDG Ward is required" />
+      <item param="bldgblock" required="true" required-message="BLDG Block is required" />
+      <item param="bldgvillageid" required="true" required-message="BLDG Village ID is required" />
+      <item param="bldgaliasvillage" required="true" required-message="BLDG Alias Village is required" />
+      <item param="agrlplotno" required="true" required-message="AGRL Plot No is required" />
+      <item param="agrlsurveyno" required="true" required-message="AGRL Survey No is required" />
+      <item param="agrlvillageid" required="false" required-message="AGRL Village ID is required" />
+      <item param="agrlaliasvillage" required="true" required-message="AGRL Alias Village is required" />
+      <item param="bndreast" required="true" required-message="BNDR EAST is required" />
+      <item param="bndrwest" required="true" required-message="BNDR WEST is required" />
+      <item param="bndrnorth" required="true" required-message="BNDR NORTH is required" />
+      <item param="bndrsouth" required="true" required-message="BNDR SOUTH is required" />
+      <item param="bndrextent" required="true" required-message="BNDR Extent is required" />
+      <item param="bndrbuiltup" required="false" required-message="BNDR BUILT UP is required" />
+      <item param="ecslno" required="true" required-message="EC Slno is required" />
+      <item param="srojdn" required="true" required-message="SroJdn is required" />
+      <item param="aadharno" required="false" required-message="Aadhar No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="ownername" required="true" required-message="Owner Name is required" />
+      <item param="perdoorno" required="false" required-message="Permanent Door No is required" />
+      <item param="perdistrict" required="true" required-message="Permanent District is required" />
+      <item param="permandal" required="true" required-message="Permanent Mandal is required" />
+      <item param="pervillage" required="true" required-message="Permanent Village is required" />
+      <item param="perpincode" required="false" required-message="Permanent Pincode is required" />
+      <item param="addressflag" required="true" required-message="Address Flag is required" />
+      <item param="postaldoorno" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Door No is required" />
+      <item param="postallocality" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Locality is required" />
+      <item param="postalstate" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal State is required" />
+      <item param="postaldistrict" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal District is required" />
+      <item param="postalmandal" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Mandal is required" />
+      <item param="postalvillage" required="true" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Village is required" />
+      <item param="postalpincode" required="false" dependon="addressflag" dependonvalue="[N],[n]" required-message="Postal Pincode is required" />
+      <item param="emailid" required="false" required-message="Email Id is required" />
+      <item param="deliverytype" required="true" required-message="Delivery Type is required" />
+      <item param="chalanamount" required="true" required-message="Chalan Amount is required" />
+      <item param="postalcharge" required="true" required-message="Postal Charge is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+    </ectransactionid>
+    <eccertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </eccertificatepdf>
+
+    <ccrdocdistrict>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+    </ccrdocdistrict>
+    <ccrdocsro>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+    </ccrdocsro>
+    <ccrdocyear>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="srocode" required="true" required-message="SRO Code is required" />
+    </ccrdocyear>
+    <ccrdoclist>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="srocode" required="true" required-message="SRO Code is required" />
+      <item param="sroyear" required="true" required-message="SRO Year is required" />
+    </ccrdoclist>
+    <ccrcopydetails>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="districtid" required="true" required-message="District Id is required" />
+      <item param="srocode" required="true" required-message="SRO Code is required" />
+      <item param="docyear" required="true" required-message="Doc Year is required" />
+      <item param="documentnumber" required="true" required-message="Document Number is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </ccrcopydetails>
+    <ccrdoctransactionno>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+      <item param="applicantname" required="true" required-message="Applicant Name is required" />
+      <item param="docdistrict" required="true" required-message="Doc District is required" />
+      <item param="srocode" required="true" required-message="SRO Code is required" />
+      <item param="yearofregistration" required="true" required-message="Year of Registration is required" />
+      <item param="documentid" required="true" required-message="Document Id is required" />
+      <item param="doorno" required="true" required-message="Door No is required" />
+      <item param="permanentdistrict" required="true" required-message="Permanent District is required" />
+      <item param="permanentmandal" required="true" required-message="Permanent Mandal is required" />
+      <item param="permanentvillage" required="true" required-message="Permanent Village is required" />
+      <item param="pincode" required="true" required-message="PinCode is required" />
+      <item param="emailid" required="true" required-message="Email Id is required" />
+      <item param="chalanamount" required="true" required-message="Chalan Amount is required" />
+      <item param="usercharge" required="true" required-message="User Charge is required" />
+      <item param="couriercharge" required="true" required-message="Courier Charge is required" />
+      <item param="totalamount" required="true" required-message="Total Amount is required" />
+    </ccrdoctransactionno>
+    <ccrcertificatepdf>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="applicationno" required="true" required-message="Application No is required" />
+    </ccrcertificatepdf>
+    
+  </meseva>
+  <martconnect>
+    <getbtbsourcecities>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+    </getbtbsourcecities>
+    <getbtbdestinationcities>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="cityid" required="true" required-message="City Id is required" />
+    </getbtbdestinationcities>
+    <btbsearchbuses>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="sourcecityid" required="true" required-message="Source City Id is required" />
+      <item param="destinationcityid" required="true" required-message="Destination City Id is required" />
+      <item param="departdate" required="true" pattern="^([0-9]{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01]))$" required-message="Depart Date is required" invalid-message="Invalid date format, Please enter yyyy-mm-dd" />
+    </btbsearchbuses>
+    <getbtbseatavailabilities>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+      <item param="usertrackid" required="true" required-message="User Track Id is required" />
+      <item param="sourcecityid" required="true" required-message="Source City Id is required" />
+      <item param="destinationcityid" required="true" required-message="Destination City Id is required" />
+      <item param="departdate" required="true" pattern="^([0-9]{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01]))$" required-message="Depart Date is required" invalid-message="Invalid date format, Please enter yyyy-mm-dd" />
+      <item param="returndate" required="false" pattern="^([0-9]{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01]))$" required-message="Return Date is required" invalid-message="Invalid date format, Please enter yyyy-mm-dd" />
+      <item param="scheduleid" required="true" required-message="Schedule Id is required" />
+      <item param="stationid" required="true" required-message="Station Id is required" />
+      <item param="transportid" required="true" required-message="Transport Id is required" />
+      <item param="transportname" required="true" required-message="Transport Name is required" />
+      <item param="seattypeid" required="true" required-message="Seat Type Id is required" />
+      <item param="traveldate" required="true" pattern="^([0-9]{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01]))$" required-message="Travel Date is required" invalid-message="Invalid date format, Please enter yyyy-mm-dd" />
+      <item param="customparamsref" required="true" required-message="Custom Params Ref is required" />
+    </getbtbseatavailabilities>
+    <btbbookticket>
+      <item param="tid" required="true" required-message="Tid is required" />
+      <item param="mobileno" required="true" pattern="^([0-9]{10})$" required-message="Mobile Number is required" invalid-message="Invalid Mobile Number" />
+      <item param="channel" required="true" allowed="[sms],[odp]" required-message="Channel is required" invalid-message="Invalid Channel" />
+      <item param="service" required="true" required-message="Service is required" />
+    </btbbookticket>
+  </martconnect>
+  
+</root>
